@@ -15,11 +15,11 @@ namespace KodiAndroid
     {
         public string Status;
 
-        public async Task PostRequests()
+        public async Task<string> PostRequests()
         {
             var myVolume = new VolumUp();
-            myVolume.Action();
-            myVolume.UpdateScreen();
+            var status = myVolume.Action();
+            return status;
 
         }
 

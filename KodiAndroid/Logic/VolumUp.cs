@@ -6,19 +6,18 @@
         {
             var jsContract = new DataContract.RootObject
             {
-                id = 0,
-                jsonrpc = "sd",
-                method = "true",
+                id = 1,
+                jsonrpc = "2.0",
+                method = "Application.SetVolume",
                 @params =
                 {
-                    playerid = 30,
-                    properties = null
+                    volume = "increment"
                 }
             };
             var jsSerialMethod = new JsonSerializingMethod();
             var jsFile = jsSerialMethod.Serelize(jsContract);
             var httpClentMethod = new HttpClientMethod();
-            var status =  httpClentMethod.PostReqest(jsFile, "ya.ru");
+            var status =  httpClentMethod.PostReqest(jsFile, "192.168.0.206:8080/jsonrpc?Application.SetVolume");
             return status;
         }
 

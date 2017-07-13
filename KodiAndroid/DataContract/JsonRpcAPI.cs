@@ -9,8 +9,10 @@ namespace KodiAndroid.DataContract
         public List<string> properties { get; set; }
 
         [DefaultValue(0)]
-        public int? playerid { get; set; }
+        public int playerid { get; set; }
 
+        [DefaultValue(null)]
+        public string volume { get; set; }
 
     }
 
@@ -19,7 +21,6 @@ namespace KodiAndroid.DataContract
         public string jsonrpc { get; set; }
         public string method { get; set; }
 
-        [DefaultValue(null)]
         public Params @params { get; set; }
 
         public int id { get; set; }

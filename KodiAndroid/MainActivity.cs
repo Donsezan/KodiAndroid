@@ -37,9 +37,11 @@ namespace KodiAndroid
 
             translateButton.Click += async (object sender, EventArgs e) =>
             {
+                var sizeTask = kodi.PostRequests();
+            
+                //phoneNumberText.Text = kodi.Status;
 
-                await kodi.PostRequests();
-                phoneNumberText.Text = kodi.Status;
+                phoneNumberText.Text = await sizeTask;
 
             };
             callButton.Click += (object sender, EventArgs e) =>
