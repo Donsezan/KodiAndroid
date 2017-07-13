@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Android.Provider;
-using Newtonsoft.Json;
+using KodiAndroid.Logic;
 
 
 namespace KodiAndroid
@@ -17,14 +17,13 @@ namespace KodiAndroid
 
         public async Task PostRequests()
         {
-            WebClient wc = new WebClient();
-            string dataString = @"{""method"" : ""guru.test"", ""params"" : [ ""Guru"" ], ""id"" : 123 }";
+            var myVolume = new VolumUp();
+            myVolume.Action();
+            myVolume.UpdateScreen();
 
-            byte[] dataBytes = Encoding.UTF8.GetBytes(dataString);
-            byte[] responseBytes = wc.UploadData(new Uri("https://gurujsonrpc.appspot.com/guru"), "POST", dataBytes);
-
-            string responseString = Encoding.UTF8.GetString(responseBytes);
-            Status = responseString;
         }
+
+
+
     }
 }

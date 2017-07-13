@@ -16,3 +16,6 @@ c:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid
 C:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid\bin\Debug\Newtonsoft.Json.dll
 C:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid\bin\Debug\Newtonsoft.Json.xml
 C:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid\obj\Debug\res\layout\semple.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csprojResolveAssemblyReference.cache
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.dll
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.pdb
