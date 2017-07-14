@@ -4,15 +4,16 @@
     {
         public string Action()
         {
+            var jsParam =  new DataContract.Params();
+            jsParam.volume = "increment";
+            
+
             var jsContract = new DataContract.RootObject
             {
                 id = 1,
                 jsonrpc = "2.0",
                 method = "Application.SetVolume",
-                @params =
-                {
-                    volume = "increment"
-                }
+                @params = jsParam
             };
             var jsSerialMethod = new JsonSerializingMethod();
             var jsFile = jsSerialMethod.Serelize(jsContract);
