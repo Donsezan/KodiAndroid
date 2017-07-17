@@ -14,15 +14,25 @@ namespace KodiAndroid.DataContract
         [DefaultValue(null)]
         public string volume { get; set; }
 
+        [DefaultValue(null)]
+        public string to { get; set; }
+
+        [DefaultValue(null)]
+        public string speed { get; set; }
+
+        [DefaultValue(null)]
+        public string mute { get; set; }
     }
 
     public class RootObject
     {
         public string jsonrpc { get; set; }
+
         public string method { get; set; }
 
-        public Params @params { get; set; }
-
         public int id { get; set; }
+
+        [DefaultValue(null)]
+        public Params @params { get; set; }
     }
 }

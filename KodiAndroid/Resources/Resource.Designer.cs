@@ -45,7 +45,19 @@ namespace KodiAndroid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Border = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Kodi_logo = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int mute_off = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int mute_on = 2130837508;
 			
 			static Drawable()
 			{
@@ -60,14 +72,65 @@ namespace KodiAndroid
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050005
+			public const int BackButton = 2131034117;
+			
 			// aapt resource value: 0x7f050002
 			public const int CallButton = 2131034114;
+			
+			// aapt resource value: 0x7f050004
+			public const int HomeButton = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int PowerButton = 2131034115;
 			
 			// aapt resource value: 0x7f050001
 			public const int TranslateButton = 2131034113;
 			
+			// aapt resource value: 0x7f050011
+			public const int VolumDownButton = 2131034129;
+			
+			// aapt resource value: 0x7f050013
+			public const int VolumUpButton = 2131034131;
+			
+			// aapt resource value: 0x7f050010
+			public const int downButton = 2131034128;
+			
 			// aapt resource value: 0x7f050000
 			public const int editText1 = 2131034112;
+			
+			// aapt resource value: 0x7f05000a
+			public const int forwardButton = 2131034122;
+			
+			// aapt resource value: 0x7f05000d
+			public const int leftButton = 2131034125;
+			
+			// aapt resource value: 0x7f050006
+			public const int mainText = 2131034118;
+			
+			// aapt resource value: 0x7f050012
+			public const int muteButton = 2131034130;
+			
+			// aapt resource value: 0x7f05000b
+			public const int nextButton = 2131034123;
+			
+			// aapt resource value: 0x7f05000e
+			public const int okButton = 2131034126;
+			
+			// aapt resource value: 0x7f050009
+			public const int playpauseButton = 2131034121;
+			
+			// aapt resource value: 0x7f050007
+			public const int previousButton = 2131034119;
+			
+			// aapt resource value: 0x7f050008
+			public const int rewindButton = 2131034120;
+			
+			// aapt resource value: 0x7f05000f
+			public const int rightButton = 2131034127;
+			
+			// aapt resource value: 0x7f05000c
+			public const int upButton = 2131034124;
 			
 			static Id()
 			{

@@ -11,12 +11,33 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int border=0x7f020000;
+        public static final int icon=0x7f020001;
+        public static final int kodi_logo=0x7f020002;
+        public static final int mute_off=0x7f020003;
+        public static final int mute_on=0x7f020004;
     }
     public static final class id {
+        public static final int BackButton=0x7f050005;
         public static final int CallButton=0x7f050002;
+        public static final int HomeButton=0x7f050004;
+        public static final int PowerButton=0x7f050003;
         public static final int TranslateButton=0x7f050001;
+        public static final int VolumDownButton=0x7f050011;
+        public static final int VolumUpButton=0x7f050013;
+        public static final int downButton=0x7f050010;
         public static final int editText1=0x7f050000;
+        public static final int forwardButton=0x7f05000a;
+        public static final int leftButton=0x7f05000d;
+        public static final int mainText=0x7f050006;
+        public static final int muteButton=0x7f050012;
+        public static final int nextButton=0x7f05000b;
+        public static final int okButton=0x7f05000e;
+        public static final int playpauseButton=0x7f050009;
+        public static final int previousButton=0x7f050007;
+        public static final int rewindButton=0x7f050008;
+        public static final int rightButton=0x7f05000f;
+        public static final int upButton=0x7f05000c;
     }
     public static final class layout {
         public static final int main=0x7f030000;

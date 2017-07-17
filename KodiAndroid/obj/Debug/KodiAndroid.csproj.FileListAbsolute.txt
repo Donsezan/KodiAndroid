@@ -34,3 +34,7 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\R.cs.flag
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\uploadflags.txt
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.dll.mdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\KodiAndroid.dll.mdb
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\border.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\kodi_logo.png
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\mute_off.png
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\mute_on.png

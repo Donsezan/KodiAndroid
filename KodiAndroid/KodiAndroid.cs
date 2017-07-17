@@ -11,19 +11,38 @@ using KodiAndroid.Logic;
 
 namespace KodiAndroid
 {
-    public class KodiAndroid
+    public class KodiAndroid 
     {
         public string Status;
+   
+        private IStrategy _strategy;
 
-        public async Task<string> PostRequests()
+            
+        public KodiAndroid(IStrategy strategy)
         {
-            var myVolume = new VolumUp();
-            var status = myVolume.Action();
-            return status;
-
+            _strategy = strategy;
         }
 
+        public KodiAndroid()
+        {
+        }
 
+        public void SetStrategy(IStrategy strategy)
+        {
+            _strategy = strategy;
+        }
+
+        public string SendPostReqest()
+        {
+            var jsSerialMethod = new JsonSerializingMethod();
+            var jsonData = _strategy.CreateJson();
+
+                
+            var jsFile = jsSerialMethod.Serelize(jsonData);
+            var httpClentMethod = new HttpClientMethod();
+            var status = httpClentMethod.PostReqest(jsFile, @"http://192.168.0.206:8080/jsonrpc");
+            return status;
+        }
 
     }
 }
