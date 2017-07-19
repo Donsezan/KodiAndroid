@@ -16,7 +16,7 @@ namespace KodiAndroid
         public string Status;
 
         private IStrategy _strategy;
-
+        private JsonSerializingMethod jsSerialMethod = new JsonSerializingMethod();
 
         public KodiAndroid(IStrategy strategy)
         {
@@ -34,13 +34,18 @@ namespace KodiAndroid
 
         public string SendPostReqest()
         {
-            var jsSerialMethod = new JsonSerializingMethod();
+            jsSerialMethod = new JsonSerializingMethod();
             var jsonData = _strategy.CreateJson();
 
             var jsFile = jsSerialMethod.Serelize(jsonData);
             var httpClentMethod = new HttpClientMethod();
             var status = httpClentMethod.PostReqest(jsFile, @"http://192.168.0.206:8080/jsonrpc");
             return status;
+        }
+
+        public string DeserilizeJson(string jsResponse)
+        {
+            return jsSerialMethod.DeSerelize(jsResponse);
         }
     }
 }

@@ -26,12 +26,17 @@ namespace KodiAndroid
             });
         }
 
-
+        private void Action(IStrategy stratey)
+        {
+            var kodi = new KodiAndroid();
+            kodi.SetStrategy(new Commands.VolumMute());
+            var status = kodi.SendPostReqest();
+            UpdateText(kodi.DeserilizeJson(status));
+        }
 
         protected override void OnCreate(Bundle bundle)
         {
-            var tt = new TaskTracker();
-            var kodi = new KodiAndroid();
+            var tt = new TaskTracker();       
             var img = GetDrawable(Resource.Drawable.mute_off);
             base.OnCreate(bundle);
             ReqestPremision();
@@ -40,7 +45,6 @@ namespace KodiAndroid
             SetContentView(Resource.Layout.Semple);
 
             // Get the UI controls from the loaded layout:
-            var mainText = FindViewById<TextView>(Resource.Id.mainText);
             var powerButton = FindViewById<Button>(Resource.Id.PowerButton);
             var homeButton = FindViewById<Button>(Resource.Id.HomeButton);
             var backButton = FindViewById<Button>(Resource.Id.BackButton);
@@ -62,29 +66,26 @@ namespace KodiAndroid
           
             tt.TaskCompleted += (sender, eventArgs) =>
             {
-                //if (!tt.AllCompleted)
-                //{
-                //    UpdateText("Task in progress");
-                //}
-                //else
-                //{
-                //    UpdateText("No Task in progress");
-                //}
+                if (!tt.AllCompleted)
+                {
+                    //UpdateText("Task in progress");
+                }
+                else
+                {
+                    //UpdateText("No Task in progress");
+                }
+            };
+            tt.TaskStarted += (object sender, EventArgs e) =>
+            {
+
+
             };
            
-            
-            
-
-
             muteButton.Click += (object sender, EventArgs e) =>
             {
                 tt.AddTask(Task.Factory.StartNew(() =>
                 {
-                    kodi.SetStrategy(new Commands.VolumMute());
-                    var status = kodi.SendPostReqest();
-                    UpdateText(status);
-
-
+                    Action(new Commands.VolumMute());
                     //img = GetDrawable(status.Contains("false") ? Resource.Drawable.mute_off : Resource.Drawable.mute_on);
                     //muteButton.SetImageDrawable(img);                   
                 },TaskCreationOptions.LongRunning));
@@ -92,120 +93,87 @@ namespace KodiAndroid
 
 
             previousButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
-                 {
-                     kodi.SetStrategy(new Commands.GoToPrevious());
-                     var status = kodi.SendPostReqest();
-                     UpdateText(status);
-                 }, TaskCreationOptions.LongRunning));
+            {
+                Action(new Commands.GoToPrevious());
+            }, TaskCreationOptions.LongRunning));
 
 
             rewindButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.GoToPrevious.SetSpeedDecrement());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.GoToPrevious.SetSpeedDecrement());
             }, TaskCreationOptions.LongRunning));
 
             playpauseButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.GoToPrevious.PlayPause());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.GoToPrevious.PlayPause());
             }, TaskCreationOptions.LongRunning));
 
             forwardButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.GoToPrevious.SetSpeedIncrement());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.GoToPrevious.SetSpeedIncrement());
             }, TaskCreationOptions.LongRunning));
 
             nextButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.GoToPrevious.GoToNext());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.GoToPrevious.GoToNext());
             }, TaskCreationOptions.LongRunning));
 
             powerButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Power());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Power());
             }, TaskCreationOptions.LongRunning));
 
             upButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Up());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Up());
             }, TaskCreationOptions.LongRunning));
 
             leftButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Left());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Left());
             }, TaskCreationOptions.LongRunning));
 
             okButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Select());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Select());
             }, TaskCreationOptions.LongRunning));
 
             rightButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Right());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Right());
             }, TaskCreationOptions.LongRunning));
 
             downButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Down());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Down());
             }, TaskCreationOptions.LongRunning));
 
             homeButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Home());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Home());
             }, TaskCreationOptions.LongRunning));
 
             backButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.Back());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.Back());
             }, TaskCreationOptions.LongRunning));
 
 
             volumUpButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.VolumUp());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.VolumUp());
             }, TaskCreationOptions.LongRunning));
 
             volumDownButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.VolumDwon());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.VolumDwon());
             }, TaskCreationOptions.LongRunning));
 
             volumDownButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                kodi.SetStrategy(new Commands.VolumDwon());
-                var status = kodi.SendPostReqest();
-                UpdateText(status);
+                Action(new Commands.VolumDwon());
             }, TaskCreationOptions.LongRunning));
         }
-
 
         private void ReqestPremision()
     {
