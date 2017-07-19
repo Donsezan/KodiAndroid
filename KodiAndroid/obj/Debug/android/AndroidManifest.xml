@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="KodiAndroid.KodiAndroid" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="23" />
-  <uses-permission android:name="android.permission.CALL_PHONE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="KodiAndroid" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="KodiAndroid" android:theme="@style/KodiAndroidTheme" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:icon="@drawable/kodi_logo" android:label="KodiAndroid" android:name="md529efe70530129ea83c0ad67811894e56.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

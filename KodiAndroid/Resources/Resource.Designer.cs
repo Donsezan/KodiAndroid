@@ -48,16 +48,34 @@ namespace KodiAndroid
 			public const int Border = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int ic_action_content_create = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Kodi_logo = 2130837506;
+			public const int ic_action_content_save = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int mute_off = 2130837507;
+			public const int ic_menu_copy_holo_dark = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int mute_on = 2130837508;
+			public const int ic_menu_cut_holo_dark = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int ic_menu_paste_holo_dark = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int ic_menu_search_holo_dark = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Icon = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int Kodi_logo = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int mute_off = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int mute_on = 2130837514;
 			
 			static Drawable()
 			{
@@ -72,65 +90,80 @@ namespace KodiAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050005
-			public const int BackButton = 2131034117;
+			// aapt resource value: 0x7f070006
+			public const int BackButton = 2131165190;
 			
-			// aapt resource value: 0x7f050002
-			public const int CallButton = 2131034114;
+			// aapt resource value: 0x7f070002
+			public const int CallButton = 2131165186;
 			
-			// aapt resource value: 0x7f050004
-			public const int HomeButton = 2131034116;
+			// aapt resource value: 0x7f070005
+			public const int HomeButton = 2131165189;
 			
-			// aapt resource value: 0x7f050003
-			public const int PowerButton = 2131034115;
+			// aapt resource value: 0x7f070004
+			public const int PowerButton = 2131165188;
 			
-			// aapt resource value: 0x7f050001
-			public const int TranslateButton = 2131034113;
+			// aapt resource value: 0x7f070001
+			public const int TranslateButton = 2131165185;
 			
-			// aapt resource value: 0x7f050011
-			public const int VolumDownButton = 2131034129;
+			// aapt resource value: 0x7f070012
+			public const int VolumDownButton = 2131165202;
 			
-			// aapt resource value: 0x7f050013
-			public const int VolumUpButton = 2131034131;
+			// aapt resource value: 0x7f070014
+			public const int VolumUpButton = 2131165204;
 			
-			// aapt resource value: 0x7f050010
-			public const int downButton = 2131034128;
+			// aapt resource value: 0x7f070011
+			public const int downButton = 2131165201;
 			
-			// aapt resource value: 0x7f050000
-			public const int editText1 = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int editText1 = 2131165184;
 			
-			// aapt resource value: 0x7f05000a
-			public const int forwardButton = 2131034122;
+			// aapt resource value: 0x7f07000b
+			public const int forwardButton = 2131165195;
 			
-			// aapt resource value: 0x7f05000d
-			public const int leftButton = 2131034125;
+			// aapt resource value: 0x7f070016
+			public const int happy = 2131165206;
 			
-			// aapt resource value: 0x7f050006
-			public const int mainText = 2131034118;
+			// aapt resource value: 0x7f07000e
+			public const int leftButton = 2131165198;
 			
-			// aapt resource value: 0x7f050012
-			public const int muteButton = 2131034130;
+			// aapt resource value: 0x7f070007
+			public const int mainText = 2131165191;
 			
-			// aapt resource value: 0x7f05000b
-			public const int nextButton = 2131034123;
+			// aapt resource value: 0x7f070015
+			public const int menu_preferences = 2131165205;
 			
-			// aapt resource value: 0x7f05000e
-			public const int okButton = 2131034126;
+			// aapt resource value: 0x7f070013
+			public const int muteButton = 2131165203;
 			
-			// aapt resource value: 0x7f050009
-			public const int playpauseButton = 2131034121;
+			// aapt resource value: 0x7f070017
+			public const int neutral = 2131165207;
 			
-			// aapt resource value: 0x7f050007
-			public const int previousButton = 2131034119;
+			// aapt resource value: 0x7f07000c
+			public const int nextButton = 2131165196;
 			
-			// aapt resource value: 0x7f050008
-			public const int rewindButton = 2131034120;
+			// aapt resource value: 0x7f07000f
+			public const int okButton = 2131165199;
 			
-			// aapt resource value: 0x7f05000f
-			public const int rightButton = 2131034127;
+			// aapt resource value: 0x7f07000a
+			public const int playpauseButton = 2131165194;
 			
-			// aapt resource value: 0x7f05000c
-			public const int upButton = 2131034124;
+			// aapt resource value: 0x7f070008
+			public const int previousButton = 2131165192;
+			
+			// aapt resource value: 0x7f070009
+			public const int rewindButton = 2131165193;
+			
+			// aapt resource value: 0x7f070010
+			public const int rightButton = 2131165200;
+			
+			// aapt resource value: 0x7f070018
+			public const int sad = 2131165208;
+			
+			// aapt resource value: 0x7f070003
+			public const int toolbar = 2131165187;
+			
+			// aapt resource value: 0x7f07000d
+			public const int upButton = 2131165197;
 			
 			static Id()
 			{
@@ -151,12 +184,31 @@ namespace KodiAndroid
 			// aapt resource value: 0x7f030001
 			public const int Semple = 2130903041;
 			
+			// aapt resource value: 0x7f030002
+			public const int toolbar = 2130903042;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int top_menus = 2131099648;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
@@ -176,6 +228,22 @@ namespace KodiAndroid
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int KodiAndroidTheme = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

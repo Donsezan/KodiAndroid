@@ -1,318 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    <LinearLayout 
-      
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#404040">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#404040">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:padding="3dp">
+        <Button
+            android:text="Power"
+            android:id="@+id/PowerButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="3dp">
-            <Button
-                android:text="Power"
-                android:id="@+id/PowerButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="Home"
-                android:id="@+id/HomeButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="Back"
-                android:id="@+id/BackButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_marginTop="20dip"
-            android:layout_marginBottom="20dip"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:height="60dp"
-                android:text="Welcome"
-                android:gravity="center"
-                android:id="@+id/mainText" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="Home"
+            android:id="@+id/HomeButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="3dp">
-            <Button
-                android:text="prev"
-                android:id="@+id/previousButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="rewind"
-                android:id="@+id/rewindButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="play"
-                android:id="@+id/playpauseButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="forward"
-                android:id="@+id/forwardButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="next"
-                android:id="@+id/nextButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".10"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="Back"
+            android:id="@+id/BackButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="3dp">
-            <Space
-                android:layout_width="0dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight=".100"
-                android:layout_height="wrap_content"
-                android:background="#ff0000" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dip"
-            android:padding="3dp">
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Button
-                android:text="UP"
-                android:id="@+id/upButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="40dp"
-                android:gravity="center"
-                android:layout_weight=".30"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp">
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Button
-                android:text="left"
-                android:id="@+id/leftButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="40dp"
-                android:gravity="center"
-                android:layout_weight=".30"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="Ok"
-                android:id="@+id/okButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="40dp"
-                android:gravity="center"
-                android:layout_weight=".30"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="Right"
-                android:id="@+id/rightButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="40dp"
-                android:gravity="center"
-                android:layout_weight=".30"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dip"
-            android:padding="3dp">
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Button
-                android:text="Down"
-                android:id="@+id/downButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="40dp"
-                android:gravity="center"
-                android:layout_weight=".30"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".30"
-                android:background="#ff0000" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp">
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".100"
-                android:layout_marginTop="20dp"
-                android:background="#ff0000" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp">
-            <Button
-                android:text="Volume -"
-                android:id="@+id/VolumDownButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".40"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-            <ImageButton
-                android:scaleType="fitCenter"
-                android:id="@+id/muteButton"
-                android:minHeight="30dp"
-                android:backgroundTint="#E8AD00"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight=".20"
-                android:background="@drawable/border"
-                android:layout_marginLeft="5dp" />
-            <Button
-                android:text="Volume +"
-                android:id="@+id/VolumUpButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:gravity="center"
-                android:layout_weight=".40"
-                android:background="@drawable/border"
-                android:backgroundTint="#E8AD00"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
-        </LinearLayout>
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:text="Welcome"
+			android:textColor="@android:color/white"
+			android:background="#212121"
+            android:gravity="center"
+            android:id="@+id/mainText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <Button
+            android:text="prev"
+            android:id="@+id/previousButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="rewind"
+            android:id="@+id/rewindButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="play"
+            android:id="@+id/playpauseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="forward"
+            android:id="@+id/forwardButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="next"
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".10"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight=".100"
+            android:layout_height="wrap_content"
+            android:background="#ff0000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dip"
+        android:padding="3dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Button
+            android:text="UP"
+            android:id="@+id/upButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:gravity="center"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Button
+            android:text="left"
+            android:id="@+id/leftButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:gravity="center"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="Ok"
+            android:id="@+id/okButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:gravity="center"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="Right"
+            android:id="@+id/rightButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:gravity="center"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dip"
+        android:padding="3dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Button
+            android:text="Down"
+            android:id="@+id/downButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:gravity="center"
+            android:layout_weight=".30"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ff0000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".100"
+            android:layout_marginTop="20dp"
+            android:background="#ff0000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <Button
+            android:text="Volume -"
+            android:id="@+id/VolumDownButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".40"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:id="@+id/muteButton"
+            android:minHeight="30dp"
+            android:backgroundTint="#E8AD00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:background="@drawable/border"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:text="Volume +"
+            android:id="@+id/VolumUpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:gravity="center"
+            android:layout_weight=".40"
+            android:background="@drawable/border"
+            android:backgroundTint="#E8AD00"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -8,6 +8,7 @@ using Android.Graphics;
 using Android.Widget;
 using Android.OS;
 using Android.Runtime;
+using Android.Views;
 using KodiAndroid.Logic;
 
 namespace KodiAndroid
@@ -32,6 +33,19 @@ namespace KodiAndroid
             kodi.SetStrategy(new Commands.VolumMute());
             var status = kodi.SendPostReqest();
             UpdateText(kodi.DeserilizeJson(status));
+        }
+        // add buttons to tollbar
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.top_menus, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
+                ToastLength.Short).Show();
+            return base.OnOptionsItemSelected(item);
         }
 
         protected override void OnCreate(Bundle bundle)
@@ -63,7 +77,14 @@ namespace KodiAndroid
             var muteButton = FindViewById<ImageButton>(Resource.Id.muteButton);       
             muteButton.SetImageDrawable(img);
 
-          
+            // Replace ToolBar
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(toolbar);
+            ActionBar.Title = "Kodi Android";
+
+            
+
+
             tt.TaskCompleted += (sender, eventArgs) =>
             {
                 if (!tt.AllCompleted)
