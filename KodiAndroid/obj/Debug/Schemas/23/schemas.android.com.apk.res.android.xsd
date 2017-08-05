@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>7/18/2017 6:22:17 PM</xs:documentation>
+    <xs:documentation>7/26/2017 11:22:19</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -774,6 +774,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -1410,6 +1416,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -2085,6 +2097,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -2450,6 +2468,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -2766,6 +2790,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -3392,6 +3422,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -3712,6 +3748,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -4048,6 +4090,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -4327,6 +4375,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -4583,6 +4637,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -5157,6 +5217,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -5577,6 +5643,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -5963,6 +6035,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -6404,6 +6482,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -6720,6 +6804,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -7036,6 +7126,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -7392,6 +7488,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -7708,6 +7810,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -8134,6 +8242,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -8506,6 +8620,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -8786,6 +8906,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -9224,6 +9350,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -9636,6 +9768,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -10166,6 +10304,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -10634,6 +10778,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -11072,6 +11222,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -11686,6 +11842,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -11924,6 +12086,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12162,6 +12330,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12400,6 +12574,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12638,6 +12818,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12876,6 +13062,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -13114,6 +13306,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -13352,6 +13550,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -13784,6 +13988,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14049,6 +14259,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14287,6 +14503,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14525,6 +14747,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14763,6 +14991,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15041,6 +15275,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15279,6 +15519,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15595,6 +15841,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15873,6 +16125,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -16202,6 +16460,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -16440,6 +16704,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -16901,10 +17171,13 @@
             <xs:enumeration value="@id/downButton" />
             <xs:enumeration value="@id/editText1" />
             <xs:enumeration value="@id/forwardButton" />
+            <xs:enumeration value="@id/happy" />
             <xs:enumeration value="@id/HomeButton" />
             <xs:enumeration value="@id/leftButton" />
             <xs:enumeration value="@id/mainText" />
+            <xs:enumeration value="@id/menu_preferences" />
             <xs:enumeration value="@id/muteButton" />
+            <xs:enumeration value="@id/neutral" />
             <xs:enumeration value="@id/nextButton" />
             <xs:enumeration value="@id/okButton" />
             <xs:enumeration value="@id/playpauseButton" />
@@ -16912,6 +17185,8 @@
             <xs:enumeration value="@id/previousButton" />
             <xs:enumeration value="@id/rewindButton" />
             <xs:enumeration value="@id/rightButton" />
+            <xs:enumeration value="@id/sad" />
+            <xs:enumeration value="@id/toolbar" />
             <xs:enumeration value="@id/TranslateButton" />
             <xs:enumeration value="@id/upButton" />
             <xs:enumeration value="@id/VolumDownButton" />
@@ -16991,6 +17266,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -17339,6 +17620,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -17672,6 +17959,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -18238,6 +18531,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -18562,6 +18861,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -18960,6 +19265,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -19318,6 +19629,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -19572,6 +19889,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -19801,6 +20124,33 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
+  <xs:attribute name="layout_gravity">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="bottom" />
+            <xs:enumeration value="center" />
+            <xs:enumeration value="center_horizontal" />
+            <xs:enumeration value="center_vertical" />
+            <xs:enumeration value="clip_horizontal" />
+            <xs:enumeration value="clip_vertical" />
+            <xs:enumeration value="end" />
+            <xs:enumeration value="fill" />
+            <xs:enumeration value="fill_horizontal" />
+            <xs:enumeration value="fill_vertical" />
+            <xs:enumeration value="left" />
+            <xs:enumeration value="right" />
+            <xs:enumeration value="start" />
+            <xs:enumeration value="top" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
   <xs:attribute name="layout_height">
     <xs:annotation>
       <xs:documentation>Specifies the basic height of the view. This is a required attribute for any view inside of a containing layout manager. Its value may be a dimension (such as "12dip") for a constant height or one of the special constants.</xs:documentation>
@@ -19839,6 +20189,298 @@
             <xs:enumeration value="?android:attr/textUnderlineThickness" />
             <xs:enumeration value="?android:attr/windowTitleSize" />
           </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_margin">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the left, top, right and bottom sides of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_marginBottom">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the bottom side of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_marginEnd">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the end side of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_marginLeft">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the left side of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_marginRight">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the right side of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_marginStart">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the start side of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_marginTop">
+    <xs:annotation>
+      <xs:documentation>Specifies extra space on the top side of this view. This space is outside this view's bounds. Margin values should be positive.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:dimen/app_icon_size" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_major" />
+            <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_height" />
+            <xs:enumeration value="@android:dimen/notification_large_icon_width" />
+            <xs:enumeration value="@android:dimen/thumbnail_height" />
+            <xs:enumeration value="@android:dimen/thumbnail_width" />
+            <xs:enumeration value="?android:attr/actionBarSize" />
+            <xs:enumeration value="?android:attr/dialogPreferredPadding" />
+            <xs:enumeration value="?android:attr/dropdownListPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredChildPaddingLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorLeft" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemIndicatorRight" />
+            <xs:enumeration value="?android:attr/expandableListPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeight" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightLarge" />
+            <xs:enumeration value="?android:attr/listPreferredItemHeightSmall" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingEnd" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingLeft" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingRight" />
+            <xs:enumeration value="?android:attr/listPreferredItemPaddingStart" />
+            <xs:enumeration value="?android:attr/panelMenuListWidth" />
+            <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
+            <xs:enumeration value="?android:attr/textUnderlineThickness" />
+            <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_weight">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
         </xs:simpleType>
       </xs:union>
     </xs:simpleType>
@@ -19952,6 +20594,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -20312,6 +20960,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -21306,6 +21960,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -21556,6 +22216,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -21835,6 +22501,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22113,6 +22785,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22351,6 +23029,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22589,6 +23273,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22827,6 +23517,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -23065,6 +23761,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -23776,6 +24478,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -24031,6 +24739,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -24347,6 +25061,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -25056,6 +25776,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -25412,6 +26138,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -25831,6 +26563,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -26179,6 +26917,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -26417,6 +27161,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -27199,6 +27949,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -27437,6 +28193,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -27675,6 +28437,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -27913,6 +28681,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28331,6 +29105,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28569,6 +29349,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28975,6 +29761,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -29213,6 +30005,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -29529,6 +30327,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -30210,6 +31014,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -30741,6 +31551,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -31115,6 +31931,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -31422,6 +32244,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@style/KodiAndroidTheme" />
             <xs:enumeration value="@style/XamarinDesignerCustomAppliedTheme" />
             <xs:enumeration value="@android:style/Animation" />
             <xs:enumeration value="@android:style/Animation.Activity" />
@@ -32304,6 +33127,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -32583,6 +33412,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -32912,6 +33747,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33230,6 +34071,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33468,6 +34315,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33746,6 +34599,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33984,6 +34843,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34369,6 +35234,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34607,6 +35478,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34923,6 +35800,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -35239,6 +36122,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -35555,6 +36444,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -35871,6 +36766,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36135,6 +37036,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36373,6 +37280,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36611,6 +37524,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36849,6 +37768,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37087,6 +38012,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37499,6 +38430,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37737,6 +38674,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37975,6 +38918,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -38268,6 +39217,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@style/KodiAndroidTheme" />
             <xs:enumeration value="@style/XamarinDesignerCustomAppliedTheme" />
             <xs:enumeration value="@android:style/Animation" />
             <xs:enumeration value="@android:style/Animation.Activity" />
@@ -39150,6 +40100,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -39978,6 +40934,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -40387,6 +41349,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -41140,6 +42108,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -41604,6 +42578,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -41858,6 +42838,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -42096,6 +43082,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -42334,6 +43326,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -42650,6 +43648,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -43018,6 +44022,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -43256,6 +44266,12 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />

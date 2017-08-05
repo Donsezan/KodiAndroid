@@ -17,9 +17,9 @@ namespace KodiAndroid.Logic
             try
             {
                 var jsonData = JsonConvert.DeserializeObject<RootObject>(jsFile);
-                if (jsonData.method != null)
+                if (jsonData.result != null)
                 {
-                    return jsonData.method;
+                    return jsonData.result.ToString();
                 }
                 return jsFile;
             }

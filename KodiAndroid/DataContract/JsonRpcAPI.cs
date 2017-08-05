@@ -34,5 +34,33 @@ namespace KodiAndroid.DataContract
 
         [DefaultValue(null)]
         public Params @params { get; set; }
+
+        [DefaultValue(null)]
+        public Result result { get; set; }
+    }
+
+    public class Time
+    {
+        public int hours { get; set; }
+        public int milliseconds { get; set; }
+        public int minutes { get; set; }
+        public int seconds { get; set; }
+    }
+
+    public class Totaltime
+    {
+        public int hours { get; set; }
+        public int milliseconds { get; set; }
+        public int minutes { get; set; }
+        public int seconds { get; set; }
+    }
+
+    public class Result
+    {
+        public int playlistid { get; set; }
+        public int position { get; set; }
+        public int speed { get; set; }
+        public Time time { get; set; }
+        public Totaltime totaltime { get; set; }
     }
 }

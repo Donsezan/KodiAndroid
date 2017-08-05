@@ -27,10 +27,10 @@ namespace KodiAndroid
             });
         }
 
-        private void Action(IStrategy stratey)
+        private void Action(IStrategy strategy)
         {
             var kodi = new KodiAndroid();
-            kodi.SetStrategy(new Commands.VolumMute());
+            kodi.SetStrategy(strategy);
             var status = kodi.SendPostReqest();
             UpdateText(kodi.DeserilizeJson(status));
         }
