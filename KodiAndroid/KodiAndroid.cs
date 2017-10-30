@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Android.Provider;
-using KodiAndroid.Logic;
+﻿using KodiAndroid.Logic;
 
 
 namespace KodiAndroid
@@ -14,13 +6,15 @@ namespace KodiAndroid
     public class KodiAndroid
     {
         public string Status;
+        private readonly VibraService _vibra = new VibraService();
 
         private IStrategy _strategy;
-        private JsonSerializingMethod jsSerialMethod = new JsonSerializingMethod();
+        private JsonSerializingMethod _jsSerialMethod = new JsonSerializingMethod();
 
         public KodiAndroid(IStrategy strategy)
         {
             _strategy = strategy;
+
         }
 
         public KodiAndroid()
@@ -32,12 +26,17 @@ namespace KodiAndroid
             _strategy = strategy;
         }
 
+        public void Vibrate(object activity)
+        {
+            _vibra.Vibrate(activity);
+        }
+
         public string SendPostReqest()
         {
-            jsSerialMethod = new JsonSerializingMethod();
+            _jsSerialMethod = new JsonSerializingMethod();
             var jsonData = _strategy.CreateJson();
 
-            var jsFile = jsSerialMethod.Serelize(jsonData);
+            var jsFile = _jsSerialMethod.Serelize(jsonData);
             var httpClentMethod = new HttpClientMethod();
             var status = httpClentMethod.PostReqest(jsFile, @"http://192.168.0.206:8080/jsonrpc");
             return status;
@@ -45,7 +44,7 @@ namespace KodiAndroid
 
         public string DeserilizeJson(string jsResponse)
         {
-            return jsSerialMethod.DeSerelize(jsResponse);
+            return _jsSerialMethod.DeSerelize(jsResponse);
         }
     }
 }

@@ -65,3 +65,7 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable-xhdpi\ic_menu_cut_ho
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable-xhdpi\ic_menu_paste_holo_dark.png
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable-xhdpi\ic_menu_search_holo_dark.png
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\menu\top_menus.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button_pressed.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button_selector.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csproj.CoreCompileInputs.cache

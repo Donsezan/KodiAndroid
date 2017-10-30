@@ -12,16 +12,19 @@ public final class R {
     }
     public static final class drawable {
         public static final int border=0x7f020000;
-        public static final int ic_action_content_create=0x7f020001;
-        public static final int ic_action_content_save=0x7f020002;
-        public static final int ic_menu_copy_holo_dark=0x7f020003;
-        public static final int ic_menu_cut_holo_dark=0x7f020004;
-        public static final int ic_menu_paste_holo_dark=0x7f020005;
-        public static final int ic_menu_search_holo_dark=0x7f020006;
-        public static final int icon=0x7f020007;
-        public static final int kodi_logo=0x7f020008;
-        public static final int mute_off=0x7f020009;
-        public static final int mute_on=0x7f02000a;
+        public static final int default_button=0x7f020001;
+        public static final int default_button_pressed=0x7f020002;
+        public static final int default_button_selector=0x7f020003;
+        public static final int ic_action_content_create=0x7f020004;
+        public static final int ic_action_content_save=0x7f020005;
+        public static final int ic_menu_copy_holo_dark=0x7f020006;
+        public static final int ic_menu_cut_holo_dark=0x7f020007;
+        public static final int ic_menu_paste_holo_dark=0x7f020008;
+        public static final int ic_menu_search_holo_dark=0x7f020009;
+        public static final int icon=0x7f02000a;
+        public static final int kodi_logo=0x7f02000b;
+        public static final int mute_off=0x7f02000c;
+        public static final int mute_on=0x7f02000d;
     }
     public static final class id {
         public static final int BackButton=0x7f070006;
@@ -63,6 +66,7 @@ public final class R {
         public static final int Hello=0x7f040000;
     }
     public static final class style {
+        public static final int DefaultButton=0x7f050001;
         public static final int KodiAndroidTheme=0x7f050000;
     }
 }

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:padding="3dp">
         <Button
+            style="@style/DefaultButton"
             android:text="Power"
             android:id="@+id/PowerButton"
             android:layout_width="0dp"
@@ -19,11 +20,10 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
+            style="@style/DefaultButton"
             android:text="Home"
             android:id="@+id/HomeButton"
             android:layout_width="0dp"
@@ -31,8 +31,6 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -43,8 +41,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
     </LinearLayout>
@@ -74,8 +71,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -86,8 +82,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -98,8 +93,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -110,8 +104,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -122,21 +115,9 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".10"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="3dp">
-        <Space
-            android:layout_width="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight=".100"
-            android:layout_height="wrap_content"
-            android:background="#ff0000" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -146,34 +127,23 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:background="#ff0000" />
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".30"
+            android:layout_weight=".40"
             android:background="#ff0000" />
         <Button
             android:text="UP"
             android:id="@+id/upButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:height="50dp"
+            android:height="60dp"
             android:gravity="center"
-            android:layout_weight=".30"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            android:layout_weight=".25"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:background="#ff0000" />
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".30"
+            android:layout_weight=".40"
             android:background="#ff0000" />
     </LinearLayout>
     <LinearLayout
@@ -183,18 +153,17 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
+            android:layout_weight=".20"
             android:background="#ff0000" />
         <Button
             android:text="left"
             android:id="@+id/leftButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:height="50dp"
+            android:height="60dp"
             android:gravity="center"
-            android:layout_weight=".30"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            android:layout_weight=".40"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -202,11 +171,10 @@
             android:id="@+id/okButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:height="50dp"
+            android:height="60dp"
             android:gravity="center"
-            android:layout_weight=".30"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            android:layout_weight=".40"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Button
@@ -214,17 +182,16 @@
             android:id="@+id/rightButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:height="50dp"
+            android:height="60dp"
             android:gravity="center"
-            android:layout_weight=".30"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            android:layout_weight=".40"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
+            android:layout_weight=".20"
             android:background="#ff0000" />
     </LinearLayout>
     <LinearLayout
@@ -235,45 +202,23 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:background="#ff0000" />
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".30"
+            android:layout_weight=".40"
             android:background="#ff0000" />
         <Button
             android:text="Down"
             android:id="@+id/downButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:height="50dp"
+            android:height="60dp"
             android:gravity="center"
-            android:layout_weight=".30"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            android:layout_weight=".25"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <Space
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:background="#ff0000" />
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:background="#ff0000" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="3dp">
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".100"
-            android:layout_marginTop="20dp"
+            android:layout_weight=".40"
             android:background="#ff0000" />
     </LinearLayout>
     <LinearLayout
@@ -288,8 +233,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".40"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
         <ImageButton
@@ -310,8 +254,7 @@
             android:height="30dp"
             android:gravity="center"
             android:layout_weight=".40"
-            android:background="@drawable/border"
-            android:backgroundTint="#E8AD00"
+            style="@style/DefaultButton"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
     </LinearLayout>

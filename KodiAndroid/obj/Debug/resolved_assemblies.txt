@@ -21,7 +21,6 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Linq.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Reflection.Extensions.dll
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Mono.CSharp.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Mono.Security.dll

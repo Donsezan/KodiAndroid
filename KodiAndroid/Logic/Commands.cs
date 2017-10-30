@@ -8,7 +8,7 @@ namespace KodiAndroid.Logic
         {
             public RootObject CreateJson()
             {
-                var jsParam = new Params { volume = "increment" };
+                var jsParam = new DataContract.Params { volume = "increment" };
                 var jsContract = new RootObject
                 {
                     id = 1,
@@ -24,7 +24,7 @@ namespace KodiAndroid.Logic
         {
             public RootObject CreateJson()
             {
-                var jsParam = new Params { mute = "toggle" };
+                var jsParam = new DataContract.Params { mute = "toggle" };
                 var jsContract = new RootObject
                 {
                     id = 1,
@@ -40,7 +40,7 @@ namespace KodiAndroid.Logic
         {
             public RootObject CreateJson()
             {
-                var jsParam = new Params { volume = "decrement" };
+                var jsParam = new DataContract.Params { volume = "decrement" };
                 var jsContract = new RootObject
                 {
                     id = 1,
@@ -176,7 +176,7 @@ namespace KodiAndroid.Logic
         {
             public RootObject CreateJson()
             {
-                var jsParam = new Params {playerid = 1, to = "previous"};
+                var jsParam = new DataContract.Params {playerid = 1, to = "previous"};
                 var jsContract = new RootObject
                 {
                     id = 1,
@@ -191,7 +191,7 @@ namespace KodiAndroid.Logic
             {
                 public RootObject CreateJson()
                 {
-                    var jsParam = new Params {playerid = 1, speed = "decrement"};
+                    var jsParam = new DataContract.Params {playerid = 1, speed = "decrement"};
                     var jsContract = new RootObject
                     {
                         id = 1,
@@ -207,7 +207,7 @@ namespace KodiAndroid.Logic
             {
                 public RootObject CreateJson()
                 {
-                    var jsParam = new Params {playerid = 1};
+                    var jsParam = new DataContract.Params {playerid = 1};
                     var jsContract = new RootObject
                     {
                         id = 1,
@@ -223,7 +223,7 @@ namespace KodiAndroid.Logic
             {
                 public RootObject CreateJson()
                 {
-                    var jsParam = new Params {playerid = 1, speed = "increment"};
+                    var jsParam = new DataContract.Params {playerid = 1, speed = "increment"};
                     var jsContract = new RootObject
                     {
                         id = 1,
@@ -240,7 +240,7 @@ namespace KodiAndroid.Logic
             {
                 public RootObject CreateJson()
                 {
-                    var jsParam = new Params {playerid = 1, to = "next"};
+                    var jsParam = new DataContract.Params {playerid = 1, to = "next"};
                     var jsContract = new RootObject
                     {
                         id = 1,

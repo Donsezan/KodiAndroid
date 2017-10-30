@@ -1,22 +1,22 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Android;
 using Android.App;
-using Android.Graphics;
+using Android.Content.PM;
 using Android.Widget;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using KodiAndroid.Logic;
+using String = System.String;
 
 namespace KodiAndroid
 {
-    [Activity(Label = "KodiAndroid", MainLauncher = true, Icon = "@drawable/kodi_logo")]
+    [Activity(Label = "KodiAndroid", MainLauncher = true, Icon = "@drawable/kodi_logo", ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : Activity
     {
         private const int MyPermissionsRequest = 101;
+        private readonly KodiAndroid _kodi = new KodiAndroid();
 
         private void UpdateText(string state)
         {
@@ -29,11 +29,12 @@ namespace KodiAndroid
 
         private void Action(IStrategy strategy)
         {
-            var kodi = new KodiAndroid();
-            kodi.SetStrategy(strategy);
-            var status = kodi.SendPostReqest();
-            UpdateText(kodi.DeserilizeJson(status));
+            _kodi.SetStrategy(strategy);
+            _kodi.Vibrate(this);
+            var status = _kodi.SendPostReqest();
+            UpdateText(_kodi.DeserilizeJson(status));
         }
+
         // add buttons to tollbar
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -43,10 +44,14 @@ namespace KodiAndroid
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
+            var myPopBuilder = new Logic.DialogBuilder();
             Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
                 ToastLength.Short).Show();
+
+            myPopBuilder.ShowDialog(this);
             return base.OnOptionsItemSelected(item);
         }
+
 
         protected override void OnCreate(Bundle bundle)
         {

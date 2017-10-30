@@ -20,7 +20,7 @@ namespace KodiAndroid.Logic
             }
             catch (WebException ex)
             {
-                if (ex.Status != WebExceptionStatus.ProtocolError) return ex.Message.ToString();
+                if (ex.Status != WebExceptionStatus.ProtocolError) return ex.Message;
                 var description = "Status Code : "+ ((HttpWebResponse)ex.Response).StatusCode + "Status Description "+ ((HttpWebResponse)ex.Response).StatusDescription;
                 return description;
             }            
