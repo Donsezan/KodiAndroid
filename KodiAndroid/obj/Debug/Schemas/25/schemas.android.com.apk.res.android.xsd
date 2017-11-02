@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>7/19/2017 22:43:28</xs:documentation>
+    <xs:documentation>11/2/2017 22:37:26</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -776,6 +776,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -1414,6 +1423,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -2092,6 +2110,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -2458,6 +2485,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -2775,6 +2811,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -3402,6 +3447,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -3722,6 +3776,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -4058,6 +4121,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -4337,6 +4409,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -4593,6 +4674,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -5287,6 +5377,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -5709,6 +5808,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -6096,6 +6204,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -6577,6 +6694,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -6894,6 +7020,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -7211,6 +7346,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -7568,6 +7712,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -7885,6 +8038,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -8313,6 +8475,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -8686,6 +8857,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -8966,6 +9146,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -9405,6 +9594,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -9817,6 +10015,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -10347,6 +10554,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -10815,6 +11031,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -11294,6 +11519,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -11910,6 +12144,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12148,6 +12391,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12386,6 +12638,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12624,6 +12885,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -12862,6 +13132,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -13100,6 +13379,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -13338,6 +13626,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -13576,6 +13873,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14009,6 +14315,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14274,6 +14589,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14512,6 +14836,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14750,6 +15083,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -14988,6 +15330,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15266,6 +15617,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15504,6 +15864,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -15821,6 +16190,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -16099,6 +16477,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -16429,6 +16816,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -16667,6 +17063,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -17123,6 +17528,8 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
+            <xs:enumeration value="@id/about" />
+            <xs:enumeration value="@id/ApiUnr" />
             <xs:enumeration value="@id/BackButton" />
             <xs:enumeration value="@id/CallButton" />
             <xs:enumeration value="@id/downButton" />
@@ -17131,17 +17538,22 @@
             <xs:enumeration value="@id/HomeButton" />
             <xs:enumeration value="@id/leftButton" />
             <xs:enumeration value="@id/mainText" />
+            <xs:enumeration value="@id/menu_preferences" />
             <xs:enumeration value="@id/muteButton" />
             <xs:enumeration value="@id/nextButton" />
             <xs:enumeration value="@id/okButton" />
+            <xs:enumeration value="@id/options" />
             <xs:enumeration value="@id/playpauseButton" />
             <xs:enumeration value="@id/PowerButton" />
             <xs:enumeration value="@id/previousButton" />
             <xs:enumeration value="@id/rewindButton" />
             <xs:enumeration value="@id/rightButton" />
+            <xs:enumeration value="@id/SaveOptions" />
+            <xs:enumeration value="@id/textView1" />
             <xs:enumeration value="@id/toolbar" />
             <xs:enumeration value="@id/TranslateButton" />
             <xs:enumeration value="@id/upButton" />
+            <xs:enumeration value="@id/VibraSwitch" />
             <xs:enumeration value="@id/VolumDownButton" />
             <xs:enumeration value="@id/VolumUpButton" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
@@ -17223,6 +17635,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -17571,6 +17992,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -17904,6 +18334,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -18471,6 +18910,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -18795,6 +19243,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -19193,6 +19650,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -19551,6 +20017,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -19805,6 +20280,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -20504,6 +20988,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -20864,6 +21357,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -21859,6 +22361,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22109,6 +22620,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22388,6 +22908,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22666,6 +23195,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -22904,6 +23442,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -23142,6 +23689,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -23380,6 +23936,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -23618,6 +24183,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -24333,6 +24907,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -24588,6 +25171,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -24905,6 +25497,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -25650,6 +26251,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -26007,6 +26617,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -26427,6 +27046,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -26776,6 +27404,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -27014,6 +27651,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -27797,6 +28443,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28035,6 +28690,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28273,6 +28937,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28511,6 +29184,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -28929,6 +29611,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -29167,6 +29858,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -29574,6 +30274,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -29812,6 +30521,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -30129,6 +30847,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -30811,6 +31538,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -31343,6 +32079,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -31718,6 +32463,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -32025,6 +32779,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@style/DefaultButton" />
             <xs:enumeration value="@style/KodiAndroidTheme" />
             <xs:enumeration value="@style/XamarinDesignerCustomAppliedTheme" />
             <xs:enumeration value="@android:style/Animation" />
@@ -32918,6 +33673,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33197,6 +33961,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33527,6 +34300,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -33845,6 +34627,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34083,6 +34874,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34361,6 +35161,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34599,6 +35408,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -34984,6 +35802,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -35222,6 +36049,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -35539,6 +36375,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -35856,6 +36701,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36173,6 +37027,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36490,6 +37353,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36754,6 +37626,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -36992,6 +37873,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37230,6 +38120,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37468,6 +38367,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37706,6 +38614,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -37944,6 +38861,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -38182,6 +39108,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -38594,6 +39529,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -38832,6 +39776,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -39070,6 +40023,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -39363,6 +40325,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@style/DefaultButton" />
             <xs:enumeration value="@style/KodiAndroidTheme" />
             <xs:enumeration value="@style/XamarinDesignerCustomAppliedTheme" />
             <xs:enumeration value="@android:style/Animation" />
@@ -40256,6 +41219,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -40678,6 +41650,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -41428,6 +42409,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -41838,6 +42828,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -42593,6 +43592,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -43058,6 +44066,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -43312,6 +44329,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -43550,6 +44576,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -43788,6 +44823,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -44105,6 +45149,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -44474,6 +45527,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />
@@ -44712,6 +45774,15 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/default_button" />
+            <xs:enumeration value="@drawable/default_button_pressed" />
+            <xs:enumeration value="@drawable/default_button_selector" />
+            <xs:enumeration value="@drawable/ic_action_content_create" />
+            <xs:enumeration value="@drawable/ic_action_content_save" />
+            <xs:enumeration value="@drawable/ic_menu_copy_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_cut_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_paste_holo_dark" />
+            <xs:enumeration value="@drawable/ic_menu_search_holo_dark" />
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/kodi_logo" />
             <xs:enumeration value="@drawable/mute_off" />

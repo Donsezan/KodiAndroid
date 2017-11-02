@@ -18,6 +18,7 @@ namespace KodiAndroid
         private const int MyPermissionsRequest = 101;
         private readonly KodiAndroid _kodi = new KodiAndroid();
 
+
         private void UpdateText(string state)
         {
             var mainText = FindViewById<TextView>(Resource.Id.mainText);
@@ -44,17 +45,16 @@ namespace KodiAndroid
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            var myPopBuilder = new Logic.DialogBuilder();
-            Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
-                ToastLength.Short).Show();
-
-            myPopBuilder.ShowDialog(this);
+            StartActivity(typeof(OptionsActivity));
             return base.OnOptionsItemSelected(item);
         }
 
 
         protected override void OnCreate(Bundle bundle)
         {
+            var init = new DataWorker(this);
+            init.LoadPreferences();
+
             var tt = new TaskTracker();       
             var img = GetDrawable(Resource.Drawable.mute_off);
             base.OnCreate(bundle);

@@ -27,36 +27,40 @@ public final class R {
         public static final int mute_on=0x7f02000d;
     }
     public static final class id {
-        public static final int BackButton=0x7f070006;
+        public static final int ApiUnr=0x7f070004;
+        public static final int BackButton=0x7f07000a;
         public static final int CallButton=0x7f070002;
-        public static final int HomeButton=0x7f070005;
-        public static final int PowerButton=0x7f070004;
+        public static final int HomeButton=0x7f070009;
+        public static final int PowerButton=0x7f070008;
+        public static final int SaveOptions=0x7f070006;
         public static final int TranslateButton=0x7f070001;
-        public static final int VolumDownButton=0x7f070012;
-        public static final int VolumUpButton=0x7f070014;
-        public static final int downButton=0x7f070011;
+        public static final int VibraSwitch=0x7f070005;
+        public static final int VolumDownButton=0x7f070016;
+        public static final int VolumUpButton=0x7f070018;
+        public static final int about=0x7f07001b;
+        public static final int downButton=0x7f070015;
         public static final int editText1=0x7f070000;
-        public static final int forwardButton=0x7f07000b;
-        public static final int happy=0x7f070016;
-        public static final int leftButton=0x7f07000e;
-        public static final int mainText=0x7f070007;
-        public static final int menu_preferences=0x7f070015;
-        public static final int muteButton=0x7f070013;
-        public static final int neutral=0x7f070017;
-        public static final int nextButton=0x7f07000c;
-        public static final int okButton=0x7f07000f;
-        public static final int playpauseButton=0x7f07000a;
-        public static final int previousButton=0x7f070008;
-        public static final int rewindButton=0x7f070009;
-        public static final int rightButton=0x7f070010;
-        public static final int sad=0x7f070018;
-        public static final int toolbar=0x7f070003;
-        public static final int upButton=0x7f07000d;
+        public static final int forwardButton=0x7f07000f;
+        public static final int leftButton=0x7f070012;
+        public static final int mainText=0x7f07000b;
+        public static final int menu_preferences=0x7f070019;
+        public static final int muteButton=0x7f070017;
+        public static final int nextButton=0x7f070010;
+        public static final int okButton=0x7f070013;
+        public static final int options=0x7f07001a;
+        public static final int playpauseButton=0x7f07000e;
+        public static final int previousButton=0x7f07000c;
+        public static final int rewindButton=0x7f07000d;
+        public static final int rightButton=0x7f070014;
+        public static final int textView1=0x7f070003;
+        public static final int toolbar=0x7f070007;
+        public static final int upButton=0x7f070011;
     }
     public static final class layout {
         public static final int main=0x7f030000;
-        public static final int semple=0x7f030001;
-        public static final int toolbar=0x7f030002;
+        public static final int options=0x7f030001;
+        public static final int semple=0x7f030002;
+        public static final int toolbar=0x7f030003;
     }
     public static final class menu {
         public static final int top_menus=0x7f060000;

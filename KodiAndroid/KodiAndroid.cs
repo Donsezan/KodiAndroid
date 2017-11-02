@@ -1,4 +1,5 @@
-﻿using KodiAndroid.Logic;
+﻿using KodiAndroid.Entire;
+using KodiAndroid.Logic;
 
 
 namespace KodiAndroid
@@ -13,6 +14,7 @@ namespace KodiAndroid
 
         public KodiAndroid(IStrategy strategy)
         {
+            
             _strategy = strategy;
 
         }
@@ -38,7 +40,7 @@ namespace KodiAndroid
 
             var jsFile = _jsSerialMethod.Serelize(jsonData);
             var httpClentMethod = new HttpClientMethod();
-            var status = httpClentMethod.PostReqest(jsFile, @"http://192.168.0.206:8080/jsonrpc");
+            var status = httpClentMethod.PostReqest(jsFile, @"http://"+Settings.UrlAdress+"/jsonrpc");
             return status;
         }
 

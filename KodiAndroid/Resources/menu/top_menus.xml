@@ -3,12 +3,9 @@
 	<item
 		android:id="@+id/menu_preferences"
 		android:showAsAction="never">
-		<item android:id="@+id/happy"
-		      android:title="Happy" />
-
-		<item android:id="@+id/neutral"
-		      android:title="Neutral" />
-		<item android:id="@+id/sad"
-		      android:title="Sad"/>
+		<item android:id="@+id/options"
+		      android:title="Options" />
+		<item android:id="@+id/about"
+		      android:title="About" />
 	</item>
 </menu>
