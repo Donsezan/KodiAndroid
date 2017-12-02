@@ -65,19 +65,19 @@
     <Compile Include="DataContract\JsonRpcAPI.cs" />
     <Compile Include="Entire\Params.cs" />
     <Compile Include="Entire\Settings.cs" />
-    <Compile Include="KodiAndroid.cs" />
+    <Compile Include="Logic\KodiAndroid.cs" />
     <Compile Include="Logic\Commands.cs" />
     <Compile Include="Logic\DialogBuilder.cs" />
     <Compile Include="Logic\DisplayWorker.cs" />
-    <Compile Include="Logic\HttpClient.cs" />
+    <Compile Include="Logic\Service\HttpClient.cs" />
     <Compile Include="Logic\IButtonActions.cs" />
-    <Compile Include="Logic\DataWorker.cs" />
+    <Compile Include="Logic\Service\DataWorker.cs" />
     <Compile Include="Logic\IStrategy.cs" />
-    <Compile Include="Logic\JsonSerializingMethod.cs" />
+    <Compile Include="Logic\Service\JsonSerializingService.cs" />
     <Compile Include="Logic\Params.cs" />
-    <Compile Include="Logic\SettingsWorker.cs" />
-    <Compile Include="Logic\TaskTracker.cs" />
-    <Compile Include="Logic\VibraService.cs" />
+    <Compile Include="Logic\Service\SettingsWorker.cs" />
+    <Compile Include="Logic\Service\TaskTracker.cs" />
+    <Compile Include="Logic\Service\VibraService.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="OptionsActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -87,9 +87,6 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\Semple.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -130,7 +127,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\toolbar.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_content_create.png" />

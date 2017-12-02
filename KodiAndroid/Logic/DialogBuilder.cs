@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Widget;
+using KodiAndroid.Logic.Service;
 
 
 namespace KodiAndroid.Logic

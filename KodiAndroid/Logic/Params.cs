@@ -1,5 +1,4 @@
-﻿using Android.App;
-using Android.Content;
+﻿using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid.Logic
 {

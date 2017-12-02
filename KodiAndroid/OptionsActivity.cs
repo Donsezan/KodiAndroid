@@ -1,12 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Android.App;
 using Android.Content.PM;
-using Android.Locations;
 using Android.OS;
 using Android.Widget;
 using KodiAndroid.Entire;
-using KodiAndroid.Logic;
+using KodiAndroid.Logic.Service;
+using KodiAndroid.Resources;
 
 namespace KodiAndroid
 {
@@ -45,13 +44,13 @@ namespace KodiAndroid
                     //UpdateText("No Task in progress");
                 }
             };
-            tt.TaskStarted += (object sender, EventArgs e) =>
+            tt.TaskStarted += (sender, e) =>
             {
 
 
             };
 
-            saveOptions.Click += (object sender, EventArgs e) =>
+            saveOptions.Click += (sender, e) =>
             {
                 tt.AddTask(Task.Factory.StartNew(() =>
                 {

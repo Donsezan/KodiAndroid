@@ -26,7 +26,6 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csproj.CoreCompileInp
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.pdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\bin\KodiAndroid.KodiAndroid.apk
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\layout\semple.xml
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\layout\main.xml
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\layout\options.xml
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\values\strings.xml
@@ -69,3 +68,4 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\R.cs.flag
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\uploadflags.txt
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.dll.mdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\KodiAndroid.dll.mdb
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csprojResolveAssemblyReference.cache

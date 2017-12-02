@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Android;
 using Android.App;
 using Android.Content.PM;
@@ -8,7 +7,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using KodiAndroid.Logic;
-using String = System.String;
+using KodiAndroid.Logic.Service;
+using Resource = KodiAndroid.Resources.Resource;
 
 namespace KodiAndroid
 {
@@ -16,7 +16,7 @@ namespace KodiAndroid
     public class MainActivity : Activity
     {
         private const int MyPermissionsRequest = 101;
-        private readonly KodiAndroid _kodi = new KodiAndroid();
+        private readonly Logic.KodiAndroid _kodi = new Logic.KodiAndroid();
 
 
         private void UpdateText(string state)
@@ -61,7 +61,7 @@ namespace KodiAndroid
             ReqestPremision();
             // Set our view from the "main" layout resource
             // SetContentView (Resource.Layout.Main);
-            SetContentView(Resource.Layout.Semple);
+            SetContentView(Resource.Layout.Main);
 
             // Get the UI controls from the loaded layout:
             var powerButton = FindViewById<Button>(Resource.Id.PowerButton);
@@ -101,13 +101,13 @@ namespace KodiAndroid
                     //UpdateText("No Task in progress");
                 }
             };
-            tt.TaskStarted += (object sender, EventArgs e) =>
+            tt.TaskStarted += (sender, e) =>
             {
 
 
             };
            
-            muteButton.Click += (object sender, EventArgs e) =>
+            muteButton.Click += (sender, e) =>
             {
                 tt.AddTask(Task.Factory.StartNew(() =>
                 {
@@ -118,84 +118,84 @@ namespace KodiAndroid
             };
 
 
-            previousButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            previousButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.GoToPrevious());
             }, TaskCreationOptions.LongRunning));
 
 
-            rewindButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            rewindButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.GoToPrevious.SetSpeedDecrement());
             }, TaskCreationOptions.LongRunning));
 
-            playpauseButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            playpauseButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.GoToPrevious.PlayPause());
             }, TaskCreationOptions.LongRunning));
 
-            forwardButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            forwardButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.GoToPrevious.SetSpeedIncrement());
             }, TaskCreationOptions.LongRunning));
 
-            nextButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            nextButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.GoToPrevious.GoToNext());
             }, TaskCreationOptions.LongRunning));
 
-            powerButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            powerButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Power());
             }, TaskCreationOptions.LongRunning));
 
-            upButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            upButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Up());
             }, TaskCreationOptions.LongRunning));
 
-            leftButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            leftButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Left());
             }, TaskCreationOptions.LongRunning));
 
-            okButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            okButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Select());
             }, TaskCreationOptions.LongRunning));
 
-            rightButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            rightButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Right());
             }, TaskCreationOptions.LongRunning));
 
-            downButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            downButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Down());
             }, TaskCreationOptions.LongRunning));
 
-            homeButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            homeButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Home());
             }, TaskCreationOptions.LongRunning));
 
-            backButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            backButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.Back());
             }, TaskCreationOptions.LongRunning));
 
 
-            volumUpButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            volumUpButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.VolumUp());
             }, TaskCreationOptions.LongRunning));
 
-            volumDownButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            volumDownButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.VolumDwon());
             }, TaskCreationOptions.LongRunning));
 
-            volumDownButton.Click += (object sender, EventArgs e) => tt.AddTask(Task.Factory.StartNew(() =>
+            volumDownButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new Commands.VolumDwon());
             }, TaskCreationOptions.LongRunning));
@@ -205,7 +205,7 @@ namespace KodiAndroid
     {
 
         // Here, thisActivity is the current activity
-        if (CheckSelfPermission(Manifest.Permission.Internet) != Android.Content.PM.Permission.Granted)
+        if (CheckSelfPermission(Manifest.Permission.Internet) != Permission.Granted)
         {
 
             // Should we show an explanation?
@@ -222,7 +222,7 @@ namespace KodiAndroid
 
                 // No explanation needed, we can request the permission.
 
-                RequestPermissions(new String[] {Manifest.Permission.Internet}, MyPermissionsRequest);
+                RequestPermissions(new[] {Manifest.Permission.Internet}, MyPermissionsRequest);
 
                 // MY_PERMISSIONS_REQUEST_Camera is an
                 // app-defined int constant. The callback method gets the
@@ -232,14 +232,14 @@ namespace KodiAndroid
     }
 
     public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
-        [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        [GeneratedEnum] Permission[] grantResults)
     {
         switch (requestCode)
         {
             case 101:
             {
                 // If request is cancelled, the result arrays are empty.
-                if (grantResults.Length > 0 && grantResults[0] == Android.Content.PM.Permission.Granted)
+                if (grantResults.Length > 0 && grantResults[0] == Permission.Granted)
                 {
 
                     // permission was granted, yay! Do the
