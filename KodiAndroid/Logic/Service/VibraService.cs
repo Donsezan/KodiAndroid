@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
+using KodiAndroid.Entire;
 
 namespace KodiAndroid.Logic.Service
 {
@@ -8,10 +9,13 @@ namespace KodiAndroid.Logic.Service
     {
         public void Vibrate(object active)
         {
-            
-            var activity = (Activity)active;
-            var vibrator = (Vibrator)activity.GetSystemService(Context.VibratorService);
-            vibrator.Vibrate(30);
+            if (Settings.VibrationState)
+            {
+                var activity = (Activity)active;
+                var vibrator = (Vibrator)activity.GetSystemService(Context.VibratorService);
+                vibrator.Vibrate(30);
+            }
+          
         }
         
     }

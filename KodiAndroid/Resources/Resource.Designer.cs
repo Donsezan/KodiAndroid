@@ -11,7 +11,7 @@
 
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("KodiAndroid.Resource", IsApplication=true)]
 
-namespace KodiAndroid.Resources
+namespace KodiAndroid
 {
 	
 	
@@ -45,46 +45,49 @@ namespace KodiAndroid.Resources
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Border = 2130837504;
+			public const int blank_title = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int default_button = 2130837505;
+			public const int Border = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int default_button_pressed = 2130837506;
+			public const int default_button = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int default_button_selector = 2130837507;
+			public const int default_button_pressed = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int ic_action_content_create = 2130837508;
+			public const int default_button_selector = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int ic_action_content_save = 2130837509;
+			public const int ic_action_content_create = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int ic_menu_copy_holo_dark = 2130837510;
+			public const int ic_action_content_save = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int ic_menu_cut_holo_dark = 2130837511;
+			public const int ic_menu_copy_holo_dark = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int ic_menu_paste_holo_dark = 2130837512;
+			public const int ic_menu_cut_holo_dark = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int ic_menu_search_holo_dark = 2130837513;
+			public const int ic_menu_paste_holo_dark = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int Icon = 2130837514;
+			public const int ic_menu_search_holo_dark = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int Kodi_logo = 2130837515;
+			public const int Icon = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int mute_off = 2130837516;
+			public const int Kodi_logo = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int mute_on = 2130837517;
+			public const int mute_off = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int mute_on = 2130837518;
 			
 			static Drawable()
 			{
@@ -123,8 +126,8 @@ namespace KodiAndroid.Resources
 			// aapt resource value: 0x7f070011
 			public const int VolumUpButton = 2131165201;
 			
-			// aapt resource value: 0x7f070018
-			public const int about = 2131165208;
+			// aapt resource value: 0x7f07001a
+			public const int about = 2131165210;
 			
 			// aapt resource value: 0x7f07000e
 			public const int downButton = 2131165198;
@@ -138,8 +141,8 @@ namespace KodiAndroid.Resources
 			// aapt resource value: 0x7f070004
 			public const int mainText = 2131165188;
 			
-			// aapt resource value: 0x7f070016
-			public const int menu_preferences = 2131165206;
+			// aapt resource value: 0x7f070018
+			public const int menu_preferences = 2131165208;
 			
 			// aapt resource value: 0x7f070010
 			public const int muteButton = 2131165200;
@@ -150,8 +153,8 @@ namespace KodiAndroid.Resources
 			// aapt resource value: 0x7f07000c
 			public const int okButton = 2131165196;
 			
-			// aapt resource value: 0x7f070017
-			public const int options = 2131165207;
+			// aapt resource value: 0x7f070019
+			public const int options = 2131165209;
 			
 			// aapt resource value: 0x7f070007
 			public const int playpauseButton = 2131165191;
@@ -170,6 +173,12 @@ namespace KodiAndroid.Resources
 			
 			// aapt resource value: 0x7f070000
 			public const int toolbar = 2131165184;
+			
+			// aapt resource value: 0x7f070016
+			public const int toolbarImg = 2131165206;
+			
+			// aapt resource value: 0x7f070017
+			public const int toolbarText = 2131165207;
 			
 			// aapt resource value: 0x7f07000a
 			public const int upButton = 2131165194;

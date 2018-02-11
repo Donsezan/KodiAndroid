@@ -1,14 +1,10 @@
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\KodiAndroid.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Java.Interop.dll
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Microsoft.CSharp.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Mono.Android.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\mscorlib.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Core.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.IO.Compression.dll
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Net.Http.dll
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.dll
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.Linq.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Newtonsoft.Json.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
@@ -21,6 +17,8 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Linq.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Reflection.Extensions.dll
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Net.Http.dll
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Mono.Security.dll
@@ -30,6 +28,7 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.Num
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Numerics.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.XmlDocument.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.XDocument.dll
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.Linq.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Globalization.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Threading.Tasks.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
@@ -43,3 +42,4 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Xml.ReaderW
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Text.Encoding.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Reflection.Primitives.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\Microsoft.CSharp.dll

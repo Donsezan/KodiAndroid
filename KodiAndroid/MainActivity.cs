@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Android;
 using Android.App;
 using Android.Content.PM;
@@ -8,7 +11,6 @@ using Android.Runtime;
 using Android.Views;
 using KodiAndroid.Logic;
 using KodiAndroid.Logic.Service;
-using Resource = KodiAndroid.Resources.Resource;
 
 namespace KodiAndroid
 {
@@ -19,12 +21,12 @@ namespace KodiAndroid
         private readonly Logic.KodiAndroid _kodi = new Logic.KodiAndroid();
 
 
-        private void UpdateText(string state)
+        private void UpdateText(List<string> state)
         {
             var mainText = FindViewById<TextView>(Resource.Id.mainText);
             RunOnUiThread(() =>
             {
-                mainText.Text = state;
+                mainText.Text = state[0];
             });
         }
 
@@ -33,7 +35,7 @@ namespace KodiAndroid
             _kodi.SetStrategy(strategy);
             _kodi.Vibrate(this);
             var status = _kodi.SendPostReqest();
-            UpdateText(_kodi.DeserilizeJson(status));
+            UpdateText(_kodi.DeserilizeJsonToString(status));
         }
 
         // add buttons to tollbar
@@ -52,7 +54,7 @@ namespace KodiAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
-            var init = new DataWorker(this);
+            var init = new DataService(this);
             init.LoadPreferences();
 
             var tt = new TaskTracker();       
@@ -84,34 +86,50 @@ namespace KodiAndroid
 
             // Replace ToolBar
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            var tolbarImg = FindViewById<ImageView>(Resource.Id.toolbarImg);
+            var tolbarTxt = FindViewById<TextView>(Resource.Id.toolbarText);
             SetActionBar(toolbar);
-            ActionBar.Title = "Kodi Android";
 
-            
+            ActionBar.Title = String.Empty;
+            tolbarImg.SetImageResource(Resource.Drawable.blank_title);
+            tolbarTxt.Text = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
+            tolbarTxt.Selected = true;
+            var background = new BackGroundService(_kodi, tolbarTxt, tolbarImg);
+            var backStatus = false;
 
 
-            tt.TaskCompleted += (sender, eventArgs) =>
+            tt.TaskCompleted += (sender, e) =>
             {
-                if (!tt.AllCompleted)
-                {
-                    //UpdateText("Task in progress");
-                }
-                else
-                {
-                    //UpdateText("No Task in progress");
-                }
+                Task.Factory.StartNew(background.UpadeteData);
+                //if (!backStatus)
+                //{
+                //    tt.AddTask(Task.Factory.StartNew(background.UpadeteData));
+                //    backStatus = true;
+                //    StartBackgroundTask();
+                //}
             };
-            tt.TaskStarted += (sender, e) =>
-            {
 
 
-            };
-           
+            //void StartBackgroundTask()
+            //{
+            //    var aTimer = new System.Timers.Timer
+            //    {
+            //        Interval = 5000,
+            //        AutoReset = true,
+            //        Enabled = true
+            //    };
+            //    aTimer.Elapsed += (o, args) =>
+            //    {
+            //        tt.AddTask(Task.Factory.StartNew(background.UpadeteData));
+            //    };
+            //} 
+
             muteButton.Click += (sender, e) =>
             {
                 tt.AddTask(Task.Factory.StartNew(() =>
                 {
                     Action(new Commands.VolumMute());
+             
                     //img = GetDrawable(status.Contains("false") ? Resource.Drawable.mute_off : Resource.Drawable.mute_on);
                     //muteButton.SetImageDrawable(img);                   
                 },TaskCreationOptions.LongRunning));
@@ -126,22 +144,22 @@ namespace KodiAndroid
 
             rewindButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.GoToPrevious.SetSpeedDecrement());
+                Action(new Commands.SetSpeedDecrement());
             }, TaskCreationOptions.LongRunning));
 
             playpauseButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.GoToPrevious.PlayPause());
+                Action(new Commands.PlayPause());
             }, TaskCreationOptions.LongRunning));
 
             forwardButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.GoToPrevious.SetSpeedIncrement());
+                Action(new Commands.SetSpeedIncrement());
             }, TaskCreationOptions.LongRunning));
 
             nextButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.GoToPrevious.GoToNext());
+                Action(new Commands.GoToNext());
             }, TaskCreationOptions.LongRunning));
 
             powerButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>

@@ -48,7 +48,6 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -57,24 +56,26 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContract\JsonRpcAPI.cs" />
+    <Compile Include="Config\AppProprties.cs" />
+    <Compile Include="DataContract\JsonRpcApi.cs" />
+    <Compile Include="DataContract\JsonRpcReceivingApi.cs" />
+    <Compile Include="DataContract\JsonRpcReqestApi.cs" />
+    <Compile Include="DataContract\JsonRpcShortRecivingApi.cs" />
     <Compile Include="Entire\Params.cs" />
     <Compile Include="Entire\Settings.cs" />
+    <Compile Include="Logic\DownloaderImg.cs" />
+    <Compile Include="Logic\Service\BackGroundService.cs" />
     <Compile Include="Logic\KodiAndroid.cs" />
     <Compile Include="Logic\Commands.cs" />
-    <Compile Include="Logic\DialogBuilder.cs" />
-    <Compile Include="Logic\DisplayWorker.cs" />
     <Compile Include="Logic\Service\HttpClient.cs" />
     <Compile Include="Logic\IButtonActions.cs" />
-    <Compile Include="Logic\Service\DataWorker.cs" />
+    <Compile Include="Logic\Service\DataService.cs" />
     <Compile Include="Logic\IStrategy.cs" />
-    <Compile Include="Logic\Service\JsonSerializingService.cs" />
+    <Compile Include="Logic\Service\JsonService.cs" />
     <Compile Include="Logic\Params.cs" />
+    <Compile Include="Logic\Service\PostService.cs" />
     <Compile Include="Logic\Service\SettingsWorker.cs" />
     <Compile Include="Logic\Service\TaskTracker.cs" />
     <Compile Include="Logic\Service\VibraService.cs" />
@@ -220,6 +221,9 @@
     <AndroidResource Include="Resources\drawable\default_button_selector.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\blank_title.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

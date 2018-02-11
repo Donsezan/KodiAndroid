@@ -5,18 +5,17 @@ using Android.OS;
 using Android.Widget;
 using KodiAndroid.Entire;
 using KodiAndroid.Logic.Service;
-using KodiAndroid.Resources;
 
 namespace KodiAndroid
 {
     [Activity(Label = "KodiAndroid", Icon = "@drawable/kodi_logo", ScreenOrientation = ScreenOrientation.Portrait)]
     public class OptionsActivity : Activity
     {
-        private readonly DataWorker _data;
+        private readonly DataService _data;
 
         public OptionsActivity()
         {
-            _data = new DataWorker(this);
+            _data = new DataService(this);
         }
 
 

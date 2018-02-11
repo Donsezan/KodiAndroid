@@ -1,4 +1,5 @@
-﻿using KodiAndroid.Entire;
+﻿using System.Collections.Generic;
+using KodiAndroid.DataContract;
 using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid.Logic
@@ -7,9 +8,11 @@ namespace KodiAndroid.Logic
     {
         public string Status;
         private readonly VibraService _vibra = new VibraService();
+        private readonly PostService _postService = new PostService();
+        private readonly JsonService _jsonService = new JsonService();
+
 
         private IStrategy _strategy;
-        private JsonSerializingService _jsSerialMethod = new JsonSerializingService();
 
         public KodiAndroid(IStrategy strategy)
         {
@@ -34,18 +37,15 @@ namespace KodiAndroid.Logic
 
         public string SendPostReqest()
         {
-            _jsSerialMethod = new JsonSerializingService();
-            var jsonData = _strategy.CreateJson();
-
-            var jsFile = _jsSerialMethod.Serelize(jsonData);
-            var httpClentMethod = new HttpClientMethod();
-            var status = httpClentMethod.PostReqest(jsFile, @"http://"+Settings.UrlAdress+"/jsonrpc");
+            var status = _postService.SendActionPostReqest(_strategy);
             return status;
         }
 
-        public string DeserilizeJson(string jsResponse)
+        public List<string> DeserilizeJsonToString(string jsResponse)
         {
-            return _jsSerialMethod.DeSerelize(jsResponse);
+            var response = _jsonService.DeSerelize(jsResponse);
+            var responsetext = _strategy.EncodeResponse(response);
+            return responsetext;
         }
     }
 }

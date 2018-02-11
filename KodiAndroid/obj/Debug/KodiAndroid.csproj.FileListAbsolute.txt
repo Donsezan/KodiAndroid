@@ -64,8 +64,9 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\menu\top_menus.xml
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button.xml
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button_pressed.xml
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button_selector.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\blank_title.png
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\R.cs.flag
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\uploadflags.txt
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csprojResolveAssemblyReference.cache
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.dll.mdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\KodiAndroid.dll.mdb
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csprojResolveAssemblyReference.cache
