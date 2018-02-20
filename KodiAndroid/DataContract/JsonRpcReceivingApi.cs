@@ -4,16 +4,41 @@ namespace KodiAndroid.DataContract
 {
     public class JsonRpcReceivingApi 
     {
-        public class RootObject 
+        //[KnownType(typeof(ResultString))]
+        //[KnownType(typeof(ResultBool))]
+        //[KnownType(typeof(ResultObject))]
+        public class RootObject
         {
             public int id { get; set; }
             public string jsonrpc { get; set; }
-            [DefaultValue(null)]
-            public Result result { get; set; }
-            //public int result { get; set; }
-            //public bool result { get; set; }
             public string method { get; set; }
+            //public object result { get; set; }
         }
+
+        public class ResultString : RootObject
+        {
+            public string result { get; set; }
+        }
+
+        public class ResultBool : RootObject
+        {
+            public bool result { get; set; }
+        }
+
+        public class ResultObject : RootObject
+        {
+            public Result result { get; set; }
+        }
+        //public class RootObject
+        //{
+        //    public int id { get; set; }
+        //    public string jsonrpc { get; set; }
+        //    [DefaultValue(null)]
+        //    public object result { get; set; }
+        //    //public int result { get; set; }
+        //    //public bool result { get; set; }
+        //    public string method { get; set; }
+        //}
 
         public class Limits
         {
@@ -24,10 +49,12 @@ namespace KodiAndroid.DataContract
 
         public class Result
         {
+            [DefaultValue(null)]
             public int playlistid { get; set; }
+            [DefaultValue(null)]
             public int position { get; set; }
+            [DefaultValue(null)]
             public int speed { get; set; }
-
             [DefaultValue(null)]
             public Time time { get; set; }
             [DefaultValue(null)]

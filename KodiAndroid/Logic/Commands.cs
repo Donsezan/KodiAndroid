@@ -30,15 +30,15 @@ namespace KodiAndroid.Logic
                 var stringList = new List<string>();
                 if (ValidateData(rootObject))
                 {
-                    stringList.Add(ErrorMesage);
+                    stringList.Add($"Volume: {rootObject.result}");
                     return stringList;
                 }
-                stringList.Add($"Volume: {rootObject.result}");
+                stringList.Add(ErrorMesage);
                 return stringList;
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return (rootObject.id != 0 & rootObject.result != null & rootObject.jsonrpc != null );
             }
         }
 
@@ -70,7 +70,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -94,15 +94,15 @@ namespace KodiAndroid.Logic
                 var stringList = new List<string>();
                 if (ValidateData(rootObject))
                 {
-                    stringList.Add(ErrorMesage);
+                    stringList.Add($"Volume: {rootObject.result}");
                     return stringList;
                 }
-                stringList.Add($"Volume: {rootObject.result}");
+                stringList.Add(ErrorMesage);
                 return stringList;
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return (rootObject.id != 0 & rootObject.result != null & rootObject.jsonrpc != null);
             }
         }
 
@@ -133,7 +133,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -164,7 +164,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -195,7 +195,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -226,7 +226,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -257,7 +257,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -279,15 +279,15 @@ namespace KodiAndroid.Logic
                 var stringList = new List<string>();
                 if (ValidateData(rootObject))
                 {
-                    stringList.Add(ErrorMesage);
+                    stringList.Add($"Select: {rootObject.result}");
                     return stringList;
                 }
-                stringList.Add($"Select: {rootObject.result}");
+                stringList.Add(ErrorMesage);
                 return stringList;
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return (rootObject.id != 0 & rootObject.result != null & rootObject.jsonrpc != null );
             }
         }
 
@@ -347,7 +347,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
 
         }
@@ -380,7 +380,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
     
@@ -401,17 +401,18 @@ namespace KodiAndroid.Logic
             public List<string> EncodeResponse(JsonRpcReceivingApi.RootObject rootObject)
             {
                 var stringList = new List<string>();
+                var result = (JsonRpcReceivingApi.Result)rootObject.result;
                 if (ValidateData(rootObject))
                 {
                     stringList.Add(ErrorMesage);
                     return stringList;
                 }
-                stringList.Add($"Decrement speed to: {rootObject.result.speed}");
+                stringList.Add($"Decrement speed to: {result.speed}");
                 return stringList;
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -432,12 +433,13 @@ namespace KodiAndroid.Logic
             public List<string> EncodeResponse(JsonRpcReceivingApi.RootObject rootObject)
             {
                 var stringList = new List<string>();
+                var result = (JsonRpcReceivingApi.Result)rootObject.result;
                 if (ValidateData(rootObject))
                 {
                     stringList.Add(ErrorMesage);
                     return stringList;
                 }
-                stringList.Add(rootObject.result.speed == 0 ? "Pause" : "Play");
+                stringList.Add(result.speed == 0 ? "Pause" : "Play");
                 return stringList;
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
@@ -463,17 +465,18 @@ namespace KodiAndroid.Logic
             public List<string> EncodeResponse(JsonRpcReceivingApi.RootObject rootObject)
             {
                 var stringList = new List<string>();
+                var result = (JsonRpcReceivingApi.Result)rootObject.result;
                 if (ValidateData(rootObject))
                 {
                     stringList.Add(ErrorMesage);
                     return stringList;
                 }
-                stringList.Add($"Increment speed to: {rootObject.result.speed}");
+                stringList.Add($"Increment speed to: {result.speed}");
                 return stringList;
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -505,7 +508,7 @@ namespace KodiAndroid.Logic
             }
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
-                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null & rootObject.method == null);
+                return !(rootObject.id == 0 & rootObject.result == null & rootObject.jsonrpc == null );
             }
         }
 
@@ -547,24 +550,25 @@ namespace KodiAndroid.Logic
             public List<string> EncodeResponse(JsonRpcReceivingApi.RootObject rootObject)
             {
                 var stringList = new List<string>();
-
+                var result = (JsonRpcReceivingApi.Result) rootObject.result;
                 if (ValidateData(rootObject))
                 {
                     stringList.Add(ErrorMesage);
                     return stringList;
                 }
-                stringList.Add(rootObject.result.item.label);
-                stringList.Add(rootObject.result.item.thumbnail);
+                stringList.Add(result.item.label);
+                stringList.Add(result.item.thumbnail);
                 return stringList;
             }
 
             public bool ValidateData(JsonRpcReceivingApi.RootObject rootObject)
             {
+                var result = (JsonRpcReceivingApi.Result)rootObject.result;
                 return !(
                     rootObject.id == 0 
                     & rootObject.jsonrpc == null 
-                    & rootObject.result.item.thumbnail == null
-                    & rootObject.result.item.label == null
+                    & result.item.thumbnail == null
+                    & result.item.label == null
                     );
             }
         }

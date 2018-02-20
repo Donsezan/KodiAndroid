@@ -16,13 +16,14 @@ c:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid
 C:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid\bin\Debug\Newtonsoft.Json.dll
 C:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid\bin\Debug\Newtonsoft.Json.xml
 C:\Users\anakolovn\Documents\Visual Studio 2017\Projects\KodiAndroid\KodiAndroid\obj\Debug\res\layout\semple.xml
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csproj.CoreCompileInputs.cache
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.pdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.KodiAndroid.apk
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.KodiAndroid-Signed.apk
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\Newtonsoft.Json.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\Newtonsoft.Json.xml
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csproj.CoreCompileInputs.cache
+D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csprojResolveAssemblyReference.cache
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.dll
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.pdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\bin\KodiAndroid.KodiAndroid.apk
@@ -67,6 +68,5 @@ D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\default_button_selec
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\res\drawable\blank_title.png
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\R.cs.flag
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\uploadflags.txt
-D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\KodiAndroid.csprojResolveAssemblyReference.cache
 D:\WorkPlace\KodiAndroid\KodiAndroid\bin\Debug\KodiAndroid.dll.mdb
 D:\WorkPlace\KodiAndroid\KodiAndroid\obj\Debug\android\assets\KodiAndroid.dll.mdb

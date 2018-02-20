@@ -1,5 +1,6 @@
 ﻿using Android.Graphics;
 using Android.Widget;
+using KodiAndroid.DataContract;
 
 namespace KodiAndroid.Logic.Service
 {
@@ -26,13 +27,14 @@ namespace KodiAndroid.Logic.Service
             var status = _kodi.SendPostReqest();
             var jsonService = new JsonService();
             var response = jsonService.DeSerelize(status);
-            if (_currentPlayingTitle != response.result.item.label)
+            var result = (JsonRpcReceivingApi.Result)response.result;
+            if (_currentPlayingTitle != result.item.label)
             {
-                _currentPlayingTitle = response.result.item.label;
+                _currentPlayingTitle = result.item.label;
                 _textView.Text = _currentPlayingTitle;
             }
             
-            var mainAmg = response.result.item.thumbnail.Substring(8).TrimEnd('/');
+            var mainAmg = result.item.thumbnail.Substring(8).TrimEnd('/');
             
             if (_imageBitmap != _downloaderImg.GetImageBitmapFromUrl(mainAmg))
             {
