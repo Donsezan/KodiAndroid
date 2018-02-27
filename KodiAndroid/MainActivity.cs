@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using KodiAndroid.Logic;
+using KodiAndroid.Logic.Commands;
 using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid
@@ -19,6 +20,7 @@ namespace KodiAndroid
     {
         private const int MyPermissionsRequest = 101;
         private readonly Logic.KodiAndroid _kodi = new Logic.KodiAndroid();
+        private readonly JsonService _jsonService = new JsonService();
 
 
         private void UpdateText(List<string> state)
@@ -30,12 +32,14 @@ namespace KodiAndroid
             });
         }
 
-        private void Action(IStrategy strategy)
+        private void Action(IBaseStrategy strategy)
         {
             _kodi.SetStrategy(strategy);
             _kodi.Vibrate(this);
-            var status = _kodi.SendPostReqest();
-            UpdateText(_kodi.DeserilizeJsonToString(status));
+            var response = _kodi.SendPostReqest();
+            var list = strategy.EncodeResponse(response);
+
+            UpdateText(list);
         }
 
         // add buttons to tollbar
@@ -128,7 +132,7 @@ namespace KodiAndroid
             {
                 tt.AddTask(Task.Factory.StartNew(() =>
                 {
-                    Action(new Commands.VolumMute());
+                    Action(new VolumMute(_jsonService));
              
                     //img = GetDrawable(status.Contains("false") ? Resource.Drawable.mute_off : Resource.Drawable.mute_on);
                     //muteButton.SetImageDrawable(img);                   
@@ -138,84 +142,79 @@ namespace KodiAndroid
 
             previousButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.GoToPrevious());
+                Action(new GoToPrevious(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
 
             rewindButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.SetSpeedDecrement());
+                Action(new SetSpeedDecrement(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             playpauseButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.PlayPause());
+                Action(new PlayPause(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             forwardButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.SetSpeedIncrement());
+                Action(new SetSpeedIncrement(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             nextButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.GoToNext());
+                Action(new GoToNext(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             powerButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Power());
+                Action(new Power(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             upButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Up());
+                Action(new Up(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             leftButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Left());
+                Action(new Left(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             okButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Select());
+                Action(new Select(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             rightButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Right());
+                Action(new Right(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             downButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Down());
+                Action(new Down(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             homeButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Home());
+                Action(new Home(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             backButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.Back());
+                Action(new Back(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
 
             volumUpButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.VolumUp());
+                Action(new VolumUp(_jsonService));
             }, TaskCreationOptions.LongRunning));
 
             volumDownButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
-                Action(new Commands.VolumDwon());
-            }, TaskCreationOptions.LongRunning));
-
-            volumDownButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Commands.VolumDwon());
+                Action(new VolumDown(_jsonService));
             }, TaskCreationOptions.LongRunning));
         }
 

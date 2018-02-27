@@ -34,6 +34,7 @@
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidSupportedAbis />
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>PdbOnly</DebugType>
@@ -46,6 +47,7 @@
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -65,20 +67,40 @@
     <Compile Include="DataContract\JsonRpcShortRecivingApi.cs" />
     <Compile Include="Entire\Params.cs" />
     <Compile Include="Entire\Settings.cs" />
+    <Compile Include="Logic\Commands\Back.cs" />
+    <Compile Include="Logic\Commands\BaseStrategy.cs" />
+    <Compile Include="Logic\Commands\Down.cs" />
+    <Compile Include="Logic\Commands\GetPlayinInfo.cs" />
+    <Compile Include="Logic\Commands\GoToNext.cs" />
+    <Compile Include="Logic\Commands\GoToPrevious.cs" />
+    <Compile Include="Logic\Commands\Home.cs" />
+    <Compile Include="Logic\Commands\Left.cs" />
+    <Compile Include="Logic\Commands\PlayPause.cs" />
+    <Compile Include="Logic\Commands\Power.cs" />
+    <Compile Include="Logic\Commands\ResultObjectStrategy.cs" />
+    <Compile Include="Logic\Commands\ResultStringStrategy.cs" />
+    <Compile Include="Logic\Commands\Right.cs" />
+    <Compile Include="Logic\Commands\Select.cs" />
+    <Compile Include="Logic\Commands\SetSpeedDecrement.cs" />
+    <Compile Include="Logic\Commands\SetSpeedIncrement.cs" />
+    <Compile Include="Logic\Commands\Up.cs" />
+    <Compile Include="Logic\Commands\VolumDown.cs" />
     <Compile Include="Logic\DownloaderImg.cs" />
     <Compile Include="Logic\Service\BackGroundService.cs" />
     <Compile Include="Logic\KodiAndroid.cs" />
-    <Compile Include="Logic\Commands.cs" />
     <Compile Include="Logic\Service\HttpClient.cs" />
     <Compile Include="Logic\IButtonActions.cs" />
     <Compile Include="Logic\Service\DataService.cs" />
-    <Compile Include="Logic\IStrategy.cs" />
+    <Compile Include="Logic\IValidatingStrategy.cs" />
+    <Compile Include="Logic\Service\httpStubService.cs" />
     <Compile Include="Logic\Service\JsonService.cs" />
     <Compile Include="Logic\Params.cs" />
     <Compile Include="Logic\Service\PostService.cs" />
     <Compile Include="Logic\Service\SettingsWorker.cs" />
     <Compile Include="Logic\Service\TaskTracker.cs" />
     <Compile Include="Logic\Service\VibraService.cs" />
+    <Compile Include="Logic\Commands\VolumMute.cs" />
+    <Compile Include="Logic\Commands\VolumUp.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="OptionsActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

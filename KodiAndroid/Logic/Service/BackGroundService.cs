@@ -23,11 +23,15 @@ namespace KodiAndroid.Logic.Service
        
         public void UpadeteData()
         {
-            _kodi.SetStrategy(new Commands.GetPlayinInfo());
-            var status = _kodi.SendPostReqest();
             var jsonService = new JsonService();
-            var response = jsonService.DeSerelize(status);
-            var result = (JsonRpcReceivingApi.Result)response.result;
+
+            var getPlayinInfo = new Commands.GetPlayinInfo(jsonService);
+            _kodi.SetStrategy(getPlayinInfo);
+            var status = _kodi.SendPostReqest();
+
+            var response = jsonService.DeSerelize<JsonRpcReceivingApi.ResultObject>(status);
+            var result = response.result;
+
             if (_currentPlayingTitle != result.item.label)
             {
                 _currentPlayingTitle = result.item.label;

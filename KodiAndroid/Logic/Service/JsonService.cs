@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using Android.App;
 using KodiAndroid.DataContract;
 using Newtonsoft.Json;
@@ -7,7 +8,7 @@ namespace KodiAndroid.Logic.Service
 {
     public class JsonService 
     {
-        public string Serelize(RootObject datacontract)
+        public string Serialize(RootObject datacontract)
         {
             var jsonFile = JsonConvert.SerializeObject(datacontract, 
                 Formatting.Indented, new JsonSerializerSettings
@@ -18,16 +19,12 @@ namespace KodiAndroid.Logic.Service
             return jsonFile;
         }
 
-        public JsonRpcReceivingApi.RootObject DeSerelize(string jsFile)
+        public T DeSerelize<T>(string jsFile)
+            where T : JsonRpcReceivingApi.RootObject
         {
             try
             {
-                var jsonData = JsonConvert.DeserializeObject<JsonRpcReceivingApi.RootObject>(jsFile);
-
-                //if (jsonData.result.GetType() != typeof(string) & jsonData.result.GetType() != typeof(long))
-                //{
-                //    jsonData.result = JsonConvert.DeserializeObject<JsonRpcReceivingApi.Result>(jsonData.result.ToString());
-                //}
+                var jsonData = JsonConvert.DeserializeObject<T>(jsFile);
                 return jsonData;
             }
             catch (JsonException)

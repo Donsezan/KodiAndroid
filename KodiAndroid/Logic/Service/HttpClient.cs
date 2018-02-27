@@ -4,7 +4,7 @@ using System.Text;
 
 namespace KodiAndroid.Logic.Service
 {
-    public class HttpClientMethod
+    public class HttpClientService
     {
         public string PostReqest(string file, string url)
         {
