@@ -7,15 +7,17 @@ namespace KodiAndroid.Logic.Service
         #region Command Reqests 
         private const string BackCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Back\",\"id\":1}";
         private const string DownCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Down\",\"id\":1}";
-        private const string GetPlayinInfoCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.GetItem\",\"id\":1,\"params\":{\"playerid\":1,\"properties\":[\"title\",\"season\",\"episode\",\"plot\",\"runtime\",\"showtitle\",\"thumbnail\"]}}";
+
+        private const string GetPlayinInfoCommand =
+                "{\"jsonrpc\":\"2.0\",\"method\":\"Player.GetItem\",\"id\":1,\"params\":{\"properties\":[\"title\",\"season\",\"episode\",\"plot\",\"runtime\",\"showtitle\",\"thumbnail\"],\"playerid\":1}}";
         private const string GoToNextCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.GoTo\",\"id\":1,\"params\":{\"playerid\":1,\"to\":\"next\"}}";
         private const string GoToPreviousCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.GoTo\",\"id\":1,\"params\":{\"playerid\":1,\"to\":\"previous\"}}";
         private const string HomeCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Home\",\"id\":1}";
         private const string LeftCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Left\",\"id\":1}";
         private const string PleyPauseCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.PlayPause\",\"id\":1,\"params\":{\"playerid\":1}}";
-        private const string PowerCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"System.Shutdown\",\"id\": 1}";
-        private const string RightCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Right\",\"id\": 1}";
-        private const string SelectCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Select\",\"id\": 1}";
+        private const string PowerCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"System.Shutdown\",\"id\":1}";
+        private const string RightCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Right\",\"id\":1}";
+        private const string SelectCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Select\",\"id\":1}";
         private const string SetSpeedDecrementCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.SetSpeed\",\"id\":1,\"params\":{\"playerid\":1,\"speed\":\"decrement\"}}";
         private const string SetSpeedIncrementCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.SetSpeed\",\"id\":1,\"params\":{\"playerid\":1,\"speed\":\"increment\"}}";
         private const string UpCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Up\",\"id\":1}";
@@ -28,7 +30,7 @@ namespace KodiAndroid.Logic.Service
 
         public string PostReqest(string file, string url)
         {
-            file = file.Replace("\n  ", "").Replace("\n","").Replace(" \"","\"");
+            //file = file.Replace("\n  ", "").Replace("\n","").Replace(" \"","\"");
             var validateUrl = Uri.TryCreate(url, UriKind.Absolute, out Uri uriResult)
                           && uriResult.Scheme == Uri.UriSchemeHttp;
             if (!validateUrl)

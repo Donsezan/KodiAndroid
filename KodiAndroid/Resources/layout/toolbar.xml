@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
          android:id="@+id/toolbar"
+         android:contentInsetStart="0dp"
+         android:contentInsetLeft="0dp"
          android:layout_width="match_parent"
-         android:layout_height="wrap_content"
+         android:layout_height="55dp"
          android:minHeight="?android:attr/actionBarSize"
          android:background="?android:attr/colorPrimary"
          android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar">
   <ImageView
     android:id="@+id/toolbarImg"
-    android:layout_width="33dp"
-    android:layout_height="33dp"
+    android:layout_width="73.22dp"
+    android:layout_height="wrap_content"
     android:adjustViewBounds="true"
     android:src="@drawable/blank_title" />
   <TextView

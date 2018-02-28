@@ -11,7 +11,7 @@ namespace KodiAndroid.Logic.Service
         public string Serialize(RootObject datacontract)
         {
             var jsonFile = JsonConvert.SerializeObject(datacontract, 
-                Formatting.Indented, new JsonSerializerSettings
+                Formatting.None, new JsonSerializerSettings
                 {
                     DefaultValueHandling = DefaultValueHandling.Ignore
                     
