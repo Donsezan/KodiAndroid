@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Android;
 using Android.App;
 using Android.Content.PM;
+using Android.Graphics;
 using Android.Widget;
 using Android.OS;
 using Android.Runtime;
@@ -21,7 +21,6 @@ namespace KodiAndroid
         private const int MyPermissionsRequest = 101;
         private readonly Logic.KodiAndroid _kodi = new Logic.KodiAndroid();
         private readonly JsonService _jsonService = new JsonService();
-
 
         private void UpdateText(List<string> state)
         {
@@ -54,8 +53,7 @@ namespace KodiAndroid
             StartActivity(typeof(OptionsActivity));
             return base.OnOptionsItemSelected(item);
         }
-
-
+        
         protected override void OnCreate(Bundle bundle)
         {
             var init = new DataService(this);
@@ -63,10 +61,11 @@ namespace KodiAndroid
 
             var tt = new TaskTracker();       
             var img = GetDrawable(Resource.Drawable.mute_off);
+            var toolBarLabele = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
+            var toolBarPrewView = BitmapFactory.DecodeResource(Resources, Resource.Drawable.blank_title);
+            var background = new BackGroundService(_kodi);
             base.OnCreate(bundle);
             ReqestPremision();
-            // Set our view from the "main" layout resource
-            // SetContentView (Resource.Layout.Main);
             SetContentView(Resource.Layout.Main);
 
             // Get the UI controls from the loaded layout:
@@ -95,56 +94,59 @@ namespace KodiAndroid
             SetActionBar(toolbar);
 
             ActionBar.Title = String.Empty;
-            tolbarImg.SetImageResource(Resource.Drawable.blank_title);
-            tolbarTxt.Text = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
+            tolbarImg.SetImageBitmap(toolBarPrewView);
+            tolbarTxt.Text = toolBarLabele;
             tolbarTxt.Selected = true;
-            var background = new BackGroundService(_kodi, tolbarTxt, tolbarImg);
-            var backStatus = false;
-
-
+            var taskStatus = true;
+            
             tt.TaskCompleted += (sender, e) =>
             {
-                Task.Factory.StartNew(background.UpadeteData);
-                //if (!backStatus)
-                //{
-                //    tt.AddTask(Task.Factory.StartNew(background.UpadeteData));
-                //    backStatus = true;
-                //    StartBackgroundTask();
-                //}
+                if (taskStatus)
+                {
+                    var displayData = Task.Factory.StartNew(background.GetCurrentPlayingData);
+                    taskStatus = false;
+                    Task.WaitAll(displayData);
+                    if (toolBarLabele != displayData.Result.Lables)
+                    {
+                        try
+                        {
+                            tolbarTxt.Text = toolBarLabele = displayData.Result.Lables;
+                        }
+                        catch (Exception exception)
+                        {
+                            Console.WriteLine(exception);
+                        }
+                    }
+                    if (toolBarPrewView != displayData.Result.PrewView)
+                    {
+                        toolBarPrewView = displayData.Result.PrewView;
+                        try
+                        {
+                            tolbarImg.SetImageBitmap(displayData.Result.PrewView);
+                        }
+                        catch (Exception)
+                        {
+                            // ignored
+                        }
+                    }
+                    taskStatus = true;
+                }
+               
             };
-
-
-            //void StartBackgroundTask()
-            //{
-            //    var aTimer = new System.Timers.Timer
-            //    {
-            //        Interval = 5000,
-            //        AutoReset = true,
-            //        Enabled = true
-            //    };
-            //    aTimer.Elapsed += (o, args) =>
-            //    {
-            //        tt.AddTask(Task.Factory.StartNew(background.UpadeteData));
-            //    };
-            //} 
-
+   
+            #region Buttons command
             muteButton.Click += (sender, e) =>
             {
                 tt.AddTask(Task.Factory.StartNew(() =>
                 {
-                    Action(new VolumMute(_jsonService));
-             
-                    //img = GetDrawable(status.Contains("false") ? Resource.Drawable.mute_off : Resource.Drawable.mute_on);
-                    //muteButton.SetImageDrawable(img);                   
+                 Action(new VolumMute(_jsonService));                 
                 },TaskCreationOptions.LongRunning));
             };
-
 
             previousButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
                 Action(new GoToPrevious(_jsonService));
             }, TaskCreationOptions.LongRunning));
-
 
             rewindButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
             {
@@ -216,6 +218,7 @@ namespace KodiAndroid
             {
                 Action(new VolumDown(_jsonService));
             }, TaskCreationOptions.LongRunning));
+            #endregion
         }
 
         private void ReqestPremision()

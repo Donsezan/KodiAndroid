@@ -20,7 +20,11 @@ namespace KodiAndroid.Logic.Commands
         }
         protected override bool ValidateData(JsonRpcReceivingApi.ResultObject rootObject)
         {
-            return !(rootObject.id == 0 && rootObject.result == null && rootObject.jsonrpc == null );
+            if (rootObject.id != 0 && rootObject.jsonrpc != null && rootObject.result != null)
+            {
+                return (rootObject.result.speed >= 0 || rootObject.result.speed <= 10);
+            }
+            return false;
         }
 
         public SetSpeedIncrement(JsonService jsonService) : base(jsonService)

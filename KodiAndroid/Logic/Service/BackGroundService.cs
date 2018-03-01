@@ -1,51 +1,42 @@
-﻿using Android.Graphics;
+﻿using System;
+using Android.Graphics;
 using Android.Widget;
 using KodiAndroid.DataContract;
 
 namespace KodiAndroid.Logic.Service
 {
+    public class BackgroundData
+    {
+        public string Lables { get; set; }
+        public Bitmap PrewView { get; set; }
+    }
+
     public class BackGroundService 
     {
         private readonly KodiAndroid _kodi;
-        private readonly ImageView _imgImageView;
-        private readonly TextView _textView;
-        private string _currentPlayingTitle;
-        private Bitmap _imageBitmap;
+        private readonly BackgroundData _backgroundData;
         private readonly DownloaderImg _downloaderImg = new DownloaderImg();
 
-        public BackGroundService(KodiAndroid kodi, TextView textView, ImageView imgImageView)
+        public BackGroundService(KodiAndroid kodi)
         {
             _kodi = kodi;
-            _textView = textView;
-            _imgImageView = imgImageView;
+            _backgroundData = new BackgroundData();
         }
         
        
-        public void UpadeteData()
+        public BackgroundData GetCurrentPlayingData()
         {
             var jsonService = new JsonService();
-
             var getPlayinInfo = new Commands.GetPlayinInfo(jsonService);
             _kodi.SetStrategy(getPlayinInfo);
             var status = _kodi.SendPostReqest();
 
             var response = jsonService.DeSerelize<JsonRpcReceivingApi.ResultObject>(status);
             var result = response.result;
-
-            if (_currentPlayingTitle != result.item.label)
-            {
-                _currentPlayingTitle = result.item.label;
-                _textView.Text = _currentPlayingTitle;
-            }
-            
+            _backgroundData.Lables = result.item.label;
             var mainAmg = result.item.thumbnail.Substring(8).TrimEnd('/');
-            
-            if (_imageBitmap != _downloaderImg.GetImageBitmapFromUrl(mainAmg))
-            {
-                _imageBitmap = _downloaderImg.GetImageBitmapFromUrl(mainAmg);
-                _imgImageView.SetImageBitmap(_imageBitmap);
-            }
-            
+            _backgroundData.PrewView = _downloaderImg.GetImageBitmapFromUrl(mainAmg);
+            return _backgroundData;  
         }
     }
 }

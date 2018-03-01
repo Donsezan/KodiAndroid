@@ -17,9 +17,9 @@ namespace KodiAndroid.Logic.Commands
             return jsContract;
         }
 
-        protected override bool ValidateData(JsonRpcReceivingApi.ResultString data)
+        protected override bool ValidateData(JsonRpcReceivingApi.ResultString rootObject)
         {
-            throw new System.NotImplementedException();
+            return (rootObject.id != 0 && rootObject.result != null && rootObject.jsonrpc != null);
         }
 
         public Right(JsonService jsonService) : base(jsonService)

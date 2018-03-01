@@ -22,7 +22,7 @@ namespace KodiAndroid.Logic.Commands
 
         protected override bool ValidateData(JsonRpcReceivingApi.ResultString rootObject)
         {
-            return !(rootObject.id == 0 && rootObject.result == null && rootObject.jsonrpc == null );
+            return (rootObject.id != 0 && rootObject.result != null && rootObject.jsonrpc != null);
         }
 
         public GoToPrevious(JsonService jsonService) : base(jsonService)
