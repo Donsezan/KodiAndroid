@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-using Android.App;
-using KodiAndroid.DataContract;
+﻿using KodiAndroid.DataContract;
 using Newtonsoft.Json;
 
 namespace KodiAndroid.Logic.Service
@@ -14,7 +11,6 @@ namespace KodiAndroid.Logic.Service
                 Formatting.None, new JsonSerializerSettings
                 {
                     DefaultValueHandling = DefaultValueHandling.Ignore
-                    
                 });
             return jsonFile;
         }
@@ -29,9 +25,7 @@ namespace KodiAndroid.Logic.Service
             }
             catch (JsonException)
             {
-
                 return null;
-
             }
         }
     }

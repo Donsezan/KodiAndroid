@@ -4,10 +4,9 @@ namespace KodiAndroid.Logic.Service
 {
     public class HttpStubService
     {
-        #region Command Reqests 
+        #region Command Requests 
         private const string BackCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Back\",\"id\":1}";
         private const string DownCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Input.Down\",\"id\":1}";
-
         private const string GetPlayinInfoCommand =
                 "{\"jsonrpc\":\"2.0\",\"method\":\"Player.GetItem\",\"id\":1,\"params\":{\"properties\":[\"title\",\"season\",\"episode\",\"plot\",\"runtime\",\"showtitle\",\"thumbnail\"],\"playerid\":1}}";
         private const string GoToNextCommand = "{\"jsonrpc\":\"2.0\",\"method\":\"Player.GoTo\",\"id\":1,\"params\":{\"playerid\":1,\"to\":\"next\"}}";
@@ -30,7 +29,6 @@ namespace KodiAndroid.Logic.Service
 
         public string PostReqest(string file, string url)
         {
-            //file = file.Replace("\n  ", "").Replace("\n","").Replace(" \"","\"");
             var validateUrl = Uri.TryCreate(url, UriKind.Absolute, out Uri uriResult)
                           && uriResult.Scheme == Uri.UriSchemeHttp;
             if (!validateUrl)

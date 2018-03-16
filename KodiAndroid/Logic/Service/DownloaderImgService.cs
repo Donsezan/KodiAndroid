@@ -4,7 +4,7 @@ using Android.Graphics;
 
 namespace KodiAndroid.Logic
 {
-    public class DownloaderImg
+    public class DownloaderImgService
     {
         public Bitmap GetImageBitmapFromUrl(string url)
         {
@@ -19,7 +19,6 @@ namespace KodiAndroid.Logic
                     imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
                 }
             }
-
             return imageBitmap;
         }
     }

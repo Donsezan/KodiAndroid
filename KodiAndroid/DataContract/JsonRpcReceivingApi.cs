@@ -4,15 +4,11 @@ namespace KodiAndroid.DataContract
 {
     public class JsonRpcReceivingApi 
     {
-        //[KnownType(typeof(ResultString))]
-        //[KnownType(typeof(ResultBool))]
-        //[KnownType(typeof(ResultObject))]
         public class RootObject
         {
             public int id { get; set; }
             public string jsonrpc { get; set; }
             public string method { get; set; }
-            //public object result { get; set; }
         }
 
         public class ResultString : RootObject
@@ -29,16 +25,6 @@ namespace KodiAndroid.DataContract
         {
             public Result result { get; set; }
         }
-        //public class RootObject
-        //{
-        //    public int id { get; set; }
-        //    public string jsonrpc { get; set; }
-        //    [DefaultValue(null)]
-        //    public object result { get; set; }
-        //    //public int result { get; set; }
-        //    //public bool result { get; set; }
-        //    public string method { get; set; }
-        //}
 
         public class Limits
         {

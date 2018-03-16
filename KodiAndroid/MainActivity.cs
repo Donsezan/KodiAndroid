@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Android;
 using Android.App;
@@ -15,6 +16,7 @@ using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid
 {
+
     [Activity(Label = "KodiAndroid", MainLauncher = true, Icon = "@drawable/kodi_logo", ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : Activity
     {
@@ -40,8 +42,7 @@ namespace KodiAndroid
 
             UpdateText(list);
         }
-
-        // add buttons to tollbar
+        
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.top_menus, menu);
@@ -59,9 +60,9 @@ namespace KodiAndroid
             var init = new DataService(this);
             init.LoadPreferences();
 
-            var tt = new TaskTracker();       
+                   
             var img = GetDrawable(Resource.Drawable.mute_off);
-            var toolBarLabele = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
+            var toolBarLabel = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
             var toolBarPrewView = BitmapFactory.DecodeResource(Resources, Resource.Drawable.blank_title);
             var background = new BackGroundService(_kodi);
             base.OnCreate(bundle);
@@ -95,191 +96,119 @@ namespace KodiAndroid
 
             ActionBar.Title = String.Empty;
             tolbarImg.SetImageBitmap(toolBarPrewView);
-            tolbarTxt.Text = toolBarLabele;
+            tolbarTxt.Text = toolBarLabel;
             tolbarTxt.Selected = true;
-            var taskStatus = true;
-            
-            tt.TaskCompleted += (sender, e) =>
+
+            var lockObject = new object();
+            var taskRunning = false;
+            var cts = new CancellationTokenSource();
+
+            var tt = new TaskTracker();
+            tt.TaskCompleted += async (sender, e) =>
             {
-                if (taskStatus)
+                lock (lockObject)
                 {
-                    var displayData = Task.Factory.StartNew(background.GetCurrentPlayingData);
-                    taskStatus = false;
-                    Task.WaitAll(displayData);
-                    if (toolBarLabele != displayData.Result.Lables)
+                    if (taskRunning)
                     {
-                        try
-                        {
-                            tolbarTxt.Text = toolBarLabele = displayData.Result.Lables;
-                        }
-                        catch (Exception exception)
-                        {
-                            Console.WriteLine(exception);
-                        }
+                        cts.Cancel(false);
                     }
-                    if (toolBarPrewView != displayData.Result.PrewView)
-                    {
-                        toolBarPrewView = displayData.Result.PrewView;
-                        try
-                        {
-                            tolbarImg.SetImageBitmap(displayData.Result.PrewView);
-                        }
-                        catch (Exception)
-                        {
-                            // ignored
-                        }
-                    }
-                    taskStatus = true;
+                    taskRunning = true;
+                    cts = new CancellationTokenSource();
                 }
-               
+                var token = cts.Token;
+
+                var displayData =
+                    await Task.Factory.StartNew(background.GetCurrentPlayingData, token);
+
+                if (token.IsCancellationRequested)
+                {
+                    return;
+                }
+
+                taskRunning = false;
+
+                RunOnUiThread(() =>
+                {
+                    if (toolBarLabel != displayData.Lables)
+                    {
+                        tolbarTxt.Text = toolBarLabel = displayData.Lables;
+                    }
+
+                    if (toolBarPrewView != displayData.PrewView)
+                    {
+                        toolBarPrewView = displayData.PrewView;
+                        tolbarImg.SetImageBitmap(displayData.PrewView);
+                    }
+                });
             };
    
             #region Buttons command
-            muteButton.Click += (sender, e) =>
-            {
-                tt.AddTask(Task.Factory.StartNew(() =>
-                {
-                 Action(new VolumMute(_jsonService));                 
-                },TaskCreationOptions.LongRunning));
-            };
 
-            previousButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new GoToPrevious(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            muteButton.Click += (sender, e) => { tt.AddTask(() => Action(new VolumMute(_jsonService))); };
 
-            rewindButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new SetSpeedDecrement(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            previousButton.Click += (sender, e) => tt.AddTask(() => { Action(new GoToPrevious(_jsonService)); });
 
-            playpauseButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new PlayPause(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            rewindButton.Click += (sender, e) => tt.AddTask(() => { Action(new SetSpeedDecrement(_jsonService)); });
 
-            forwardButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new SetSpeedIncrement(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            playpauseButton.Click += (sender, e) => tt.AddTask(() => { Action(new PlayPause(_jsonService)); });
 
-            nextButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new GoToNext(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            forwardButton.Click += (sender, e) => tt.AddTask(() => { Action(new SetSpeedIncrement(_jsonService)); });
 
-            powerButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Power(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            nextButton.Click += (sender, e) => tt.AddTask(() => { Action(new GoToNext(_jsonService)); });
 
-            upButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Up(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            powerButton.Click += (sender, e) => tt.AddTask(() => { Action(new Power(_jsonService)); });
 
-            leftButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Left(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            upButton.Click += (sender, e) => tt.AddTask(() => { Action(new Up(_jsonService)); });
 
-            okButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Select(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            leftButton.Click += (sender, e) => tt.AddTask(() => { Action(new Left(_jsonService)); });
 
-            rightButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Right(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            okButton.Click += (sender, e) => tt.AddTask(() => { Action(new Select(_jsonService)); });
 
-            downButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Down(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            rightButton.Click += (sender, e) => tt.AddTask(() => { Action(new Right(_jsonService)); });
 
-            homeButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Home(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            downButton.Click += (sender, e) => tt.AddTask(() => { Action(new Down(_jsonService)); });
 
-            backButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new Back(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            homeButton.Click += (sender, e) => tt.AddTask(() => { Action(new Home(_jsonService)); });
 
+            backButton.Click += (sender, e) => tt.AddTask(() => { Action(new Back(_jsonService)); });
 
-            volumUpButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new VolumUp(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            volumUpButton.Click += (sender, e) => tt.AddTask(() => { Action(new VolumUp(_jsonService)); });
 
-            volumDownButton.Click += (sender, e) => tt.AddTask(Task.Factory.StartNew(() =>
-            {
-                Action(new VolumDown(_jsonService));
-            }, TaskCreationOptions.LongRunning));
+            volumDownButton.Click += (sender, e) => tt.AddTask(() => { Action(new VolumDown(_jsonService)); });
+
             #endregion
         }
 
         private void ReqestPremision()
     {
-
-        // Here, thisActivity is the current activity
         if (CheckSelfPermission(Manifest.Permission.Internet) != Permission.Granted)
         {
-
-            // Should we show an explanation?
             if (ShouldShowRequestPermissionRationale(Manifest.Permission.Internet))
             {
-
-                // Show an expanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
-
             }
             else
             {
-
-                // No explanation needed, we can request the permission.
-
                 RequestPermissions(new[] {Manifest.Permission.Internet}, MyPermissionsRequest);
-
-                // MY_PERMISSIONS_REQUEST_Camera is an
-                // app-defined int constant. The callback method gets the
-                // result of the request.
             }
         }
     }
 
-    public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
         [GeneratedEnum] Permission[] grantResults)
-    {
-        switch (requestCode)
         {
-            case 101:
+            switch (requestCode)
             {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.Length > 0 && grantResults[0] == Permission.Granted)
+                case 101:
                 {
-
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-
+                    if (grantResults.Length > 0 && grantResults[0] == Permission.Granted)
+                    {}
+                    else
+                    {
+                    }
+                    return;
+                    }
                 }
-                else
-                {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                }
-                return;
             }
-
-            // other 'case' lines to check for other
-            // permissions this app might request
-        }
-
-    }
     }
 }
 

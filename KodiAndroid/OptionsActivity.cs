@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
@@ -17,8 +16,7 @@ namespace KodiAndroid
         {
             _data = new DataService(this);
         }
-
-
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -30,42 +28,22 @@ namespace KodiAndroid
             var saveOptions = FindViewById<Button>(Resource.Id.SaveOptions);
             UpdateDisplay(urlField, vibraSwitch);
 
-            
-
-            tt.TaskCompleted += (sender, eventArgs) =>
-            {
-                if (!tt.AllCompleted)
-                {
-                    //UpdateText("Task in progress");
-                }
-                else
-                {
-                    //UpdateText("No Task in progress");
-                }
-            };
-            tt.TaskStarted += (sender, e) =>
-            {
-
-
-            };
-
             saveOptions.Click += (sender, e) =>
             {
-                tt.AddTask(Task.Factory.StartNew(() =>
+                tt.AddTask(() =>
                 {
                     Settings.UrlAdress = urlField.Text;
                     Settings.VibrationState = vibraSwitch.Checked;
                     _data.SavePreferences();
-                }, TaskCreationOptions.LongRunning));
+                });
+                OnBackPressed();
             };
         }
 
-        private void UpdateDisplay(EditText urlField, Switch vibraSwitch)
+        private void UpdateDisplay(TextView urlField, ICheckable vibraSwitch)
         {
             urlField.Text = Settings.UrlAdress;
             vibraSwitch.Checked = Settings.VibrationState;
         }
-
-
     }
 }

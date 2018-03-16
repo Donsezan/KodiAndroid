@@ -4,5 +4,6 @@
     {
         public string UrlAdress = "UrlAdress";
         public string VibrationState = "VibraState";
+        public string AppName = "KodiAndroid";
     }
 }

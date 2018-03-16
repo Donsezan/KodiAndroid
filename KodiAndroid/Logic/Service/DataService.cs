@@ -7,7 +7,7 @@ namespace KodiAndroid.Logic.Service
     public class DataService
     {
         private readonly Activity _activity;
-        private readonly Entire.Params _params = new Entire.Params();
+        private readonly Params _params = new Params();
 
         public DataService(Activity activity)
         {
@@ -25,18 +25,9 @@ namespace KodiAndroid.Logic.Service
 
         public void LoadPreferences()
         {
-
             var prefs = _activity.GetSharedPreferences("Preferences", FileCreationMode.Private);
-            if (prefs.Contains(_params.UrlAdress))
-            {
-                Settings.UrlAdress = prefs.GetString(_params.UrlAdress, "127.0.0.1:8080");
-            }
-            if (prefs.Contains(_params.VibrationState))
-            {
-                Settings.VibrationState = prefs.GetBoolean(_params.VibrationState, true);
-            }
+            Settings.UrlAdress = prefs.GetString(_params.UrlAdress, "127.0.0.1");
+            Settings.VibrationState = prefs.GetBoolean(_params.VibrationState, true);
         }
-
-       
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Concurrent;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace KodiAndroid.Logic.Service
@@ -8,13 +6,11 @@ namespace KodiAndroid.Logic.Service
     public class TaskTracker
     {
         public event EventHandler TaskCompleted;
-        public event EventHandler TaskStarted;
-        private ConcurrentBag<Task> _tasks = new ConcurrentBag<Task>();
-        public bool AllCompleted => _tasks.Aggregate(true, (b, task) => b && task.IsCompleted);
-        public void AddTask(Task task)
+
+        public async void AddTask(Action action)
         {
-            _tasks.Add(task.ContinueWith(t => TaskCompleted?.Invoke(this, EventArgs.Empty)));
-            TaskStarted?.Invoke(this, EventArgs.Empty);
+            await Task.Factory.StartNew(action);
+            TaskCompleted?.Invoke(this, EventArgs.Empty);
         }
     }
 }
