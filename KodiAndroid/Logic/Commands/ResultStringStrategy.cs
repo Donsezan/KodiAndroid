@@ -18,7 +18,7 @@ namespace KodiAndroid.Logic.Commands
             var stringList = new List<string>();
             if (ValidateData(data))
             {
-                stringList.Add($"{this.GetType().Name}: {data.result}");
+                stringList.Add($"{GetType().Name}: {data.result}");
                 return stringList;
             }
             stringList.Add(StartegyResultParse.ErrorMesage);

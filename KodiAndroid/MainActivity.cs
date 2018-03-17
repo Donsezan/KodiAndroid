@@ -206,9 +206,9 @@ namespace KodiAndroid
                     {
                     }
                     return;
-                    }
                 }
             }
+        }
     }
 }
 

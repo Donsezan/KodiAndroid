@@ -8,7 +8,7 @@ namespace KodiAndroid.Logic.Commands
     {
         public override RootObject CreateJson()
         {
-            var jsParam = new DataContract.Params {playerid = 1, speed = "increment"};
+            var jsParam = new Params {playerid = 1, speed = "increment"};
             var jsContract = new RootObject
             {
                 id = 1,
@@ -31,9 +31,10 @@ namespace KodiAndroid.Logic.Commands
         {
         }
 
-        protected override void AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
+        protected override List<string> AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
         {
             desList.Add($"Increment speed to: {rootObject.result.speed}");
+            return desList;
         }
     }
 }

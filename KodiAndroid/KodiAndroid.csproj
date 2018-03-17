@@ -60,11 +60,8 @@
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\AppProprties.cs" />
     <Compile Include="DataContract\JsonRpcApi.cs" />
     <Compile Include="DataContract\JsonRpcReceivingApi.cs" />
-    <Compile Include="DataContract\JsonRpcReqestApi.cs" />
-    <Compile Include="DataContract\JsonRpcShortRecivingApi.cs" />
     <Compile Include="Entire\Params.cs" />
     <Compile Include="Entire\Settings.cs" />
     <Compile Include="Logic\Commands\Back.cs" />
@@ -85,18 +82,15 @@
     <Compile Include="Logic\Commands\SetSpeedIncrement.cs" />
     <Compile Include="Logic\Commands\Up.cs" />
     <Compile Include="Logic\Commands\VolumDown.cs" />
-    <Compile Include="Logic\DownloaderImg.cs" />
     <Compile Include="Logic\Service\BackGroundService.cs" />
     <Compile Include="Logic\KodiAndroid.cs" />
+    <Compile Include="Logic\Service\DownloaderImgService.cs" />
     <Compile Include="Logic\Service\HttpClient.cs" />
-    <Compile Include="Logic\IButtonActions.cs" />
     <Compile Include="Logic\Service\DataService.cs" />
     <Compile Include="Logic\IValidatingStrategy.cs" />
     <Compile Include="Logic\Service\httpStubService.cs" />
     <Compile Include="Logic\Service\JsonService.cs" />
-    <Compile Include="Logic\Params.cs" />
     <Compile Include="Logic\Service\PostService.cs" />
-    <Compile Include="Logic\Service\SettingsWorker.cs" />
     <Compile Include="Logic\Service\TaskTracker.cs" />
     <Compile Include="Logic\Service\VibraService.cs" />
     <Compile Include="Logic\Commands\VolumMute.cs" />

@@ -13,13 +13,14 @@ namespace KodiAndroid.Logic.Commands
             
             if (ValidateData(rootObject))
             {
-                stringList.Add(StartegyResultParse.ErrorMesage);
+                stringList = AddAdditionalData(stringList,rootObject);
                 return stringList;
             }
+            stringList.Add(StartegyResultParse.ErrorMesage);
             return stringList;
         }
 
-        protected abstract void AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject);
+        protected abstract List<string> AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject);
         
 
         protected ResultObjectStrategy(JsonService jsonService) : base(jsonService)

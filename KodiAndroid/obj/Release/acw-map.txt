@@ -1,4 +1,0 @@
-KodiAndroid.MainActivity, KodiAndroid;md529efe70530129ea83c0ad67811894e56.MainActivity
-KodiAndroid.MainActivity, KodiAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md529efe70530129ea83c0ad67811894e56.MainActivity
-KodiAndroid.MainActivity;md529efe70530129ea83c0ad67811894e56.MainActivity
-kodiandroid.MainActivity;md529efe70530129ea83c0ad67811894e56.MainActivity

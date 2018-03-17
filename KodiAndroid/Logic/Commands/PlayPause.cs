@@ -6,9 +6,13 @@ namespace KodiAndroid.Logic.Commands
 {
     public class PlayPause : ResultObjectStrategy
     {
+        public PlayPause(JsonService jsonService) : base(jsonService)
+        {
+        }
+
         public override RootObject CreateJson()
         {
-            var jsParam = new DataContract.Params {playerid = 1};
+            var jsParam = new Params {playerid = 1};
             var jsContract = new RootObject
             {
                 id = 1,
@@ -28,13 +32,10 @@ namespace KodiAndroid.Logic.Commands
             return false;
         }
 
-        public PlayPause(JsonService jsonService) : base(jsonService)
+        protected override List<string> AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
         {
-        }
-
-        protected override void AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
-        {
-            desList.Add(rootObject.result.speed == 0 ? "Pause" : "Play");
+            desList.Add(rootObject.result.speed == 0 ? "Paused" : "Playing");
+            return desList;
         }
     }
 }
