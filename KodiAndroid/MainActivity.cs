@@ -137,7 +137,7 @@ namespace KodiAndroid
                     if (toolBarPrewView != displayData.PrewView)
                     {
                         toolBarPrewView = displayData.PrewView;
-                        tolbarImg.SetImageBitmap(displayData.PrewView);
+                        tolbarImg.SetImageBitmap(toolBarPrewView != null ? displayData.PrewView : BitmapFactory.DecodeResource(Resources, Resource.Drawable.blank_title));
                     }
                 });
             };

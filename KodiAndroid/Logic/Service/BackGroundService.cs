@@ -1,4 +1,5 @@
-﻿using Android.Graphics;
+﻿using System;
+using Android.Graphics;
 using KodiAndroid.DataContract;
 
 namespace KodiAndroid.Logic.Service
@@ -28,10 +29,16 @@ namespace KodiAndroid.Logic.Service
             _kodi.SetStrategy(getPlayinInfo);
             var status = _kodi.SendPostReqest();
             var response = jsonService.DeSerelize<JsonRpcReceivingApi.ResultObject>(status);
-            var result = response.result;
-            _backgroundData.Lables = result.item.label;
-            var mainAmg = result.item.thumbnail.Substring(8).TrimEnd('/');
-            _backgroundData.PrewView = _downloaderImgService.GetImageBitmapFromUrl(mainAmg);
+            _backgroundData.Lables = response.result.item.label;
+            if (response.result.item.thumbnail != string.Empty)
+            {
+                var mainAmg = response.result.item.thumbnail.Substring(8).TrimEnd('/');
+                _backgroundData.PrewView = _downloaderImgService.GetImageBitmapFromUrl(mainAmg);
+            }
+            else
+            {
+                _backgroundData.PrewView = null;
+            }
             return _backgroundData;  
         }
     }
