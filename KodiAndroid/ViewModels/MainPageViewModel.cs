@@ -109,21 +109,16 @@ namespace KodiAndroid.ViewModels
                 {
                     if (toolBarLabel != displayData.Lables)
                     {
-                        tolbarTxt.Text = toolBarLabel = displayData.Lables;
+                        toolBarLabel = displayData.Lables;
+                        tolbarTxt.Text = toolBarLabel != string.Empty ? toolBarLabel : "\t \t \t \t \t \t No Title";
                     }
 
                     if (toolBarPrewView != displayData.PrewView)
                     {
                         toolBarPrewView = displayData.PrewView;
-                        if (displayData.PrewView != null)
-                        {
-                            tolbarImg.SetImageBitmap(displayData.PrewView);
-                        }
-                        else
-                        {
-                            tolbarImg.SetImageBitmap(BitmapFactory.DecodeResource(_activity.Resources, Resource.Drawable.warning_title));
-                        }
-                        
+                        tolbarImg.SetImageBitmap(displayData.PrewView ??
+                                                 BitmapFactory.DecodeResource(_activity.Resources,
+                                                     Resource.Drawable.blank_title));
                     }
                 });
             };

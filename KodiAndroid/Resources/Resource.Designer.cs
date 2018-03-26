@@ -89,9 +89,6 @@ namespace KodiAndroid
 			// aapt resource value: 0x7f02000e
 			public const int mute_on = 2130837518;
 			
-			// aapt resource value: 0x7f02000f
-			public const int warning_title = 2130837519;
-			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
