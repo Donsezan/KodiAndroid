@@ -2,7 +2,7 @@
 using System.Net;
 using Android.Graphics;
 
-namespace KodiAndroid.Logic
+namespace KodiAndroid.Logic.Service
 {
     public class DownloaderImgService
     {

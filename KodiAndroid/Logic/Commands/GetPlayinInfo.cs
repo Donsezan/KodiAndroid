@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using KodiAndroid.DataContract;
+using KodiAndroid.DataContracts;
 using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid.Logic.Commands
@@ -28,7 +28,7 @@ namespace KodiAndroid.Logic.Commands
                 "thumbnail"
             };
 
-            var jsParam = new DataContract.Params { playerid = 1, properties = jsProperties };
+            var jsParam = new Params { playerid = 1, properties = jsProperties };
             var jsContract = new RootObject
             {
                 id = 1,

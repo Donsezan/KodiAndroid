@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using KodiAndroid.DataContract;
+using KodiAndroid.DataContracts;
 
 namespace KodiAndroid.Logic
 {

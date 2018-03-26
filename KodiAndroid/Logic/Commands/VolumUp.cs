@@ -1,4 +1,4 @@
-﻿using KodiAndroid.DataContract;
+﻿using KodiAndroid.DataContracts;
 using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid.Logic.Commands
@@ -7,7 +7,7 @@ namespace KodiAndroid.Logic.Commands
     {
         public override RootObject CreateJson()
         {
-            var jsParam = new DataContract.Params { volume = "increment" };
+            var jsParam = new Params { volume = "increment" };
             var jsContract = new RootObject
             {
                 id = 1,

@@ -1,4 +1,4 @@
-﻿using KodiAndroid.DataContract;
+﻿using KodiAndroid.DataContracts;
 using KodiAndroid.Logic.Service;
 
 namespace KodiAndroid.Logic.Commands

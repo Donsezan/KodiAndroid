@@ -1,4 +1,4 @@
-﻿using KodiAndroid.DataContract;
+﻿using KodiAndroid.DataContracts;
 using Newtonsoft.Json;
 
 namespace KodiAndroid.Logic.Service

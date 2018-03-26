@@ -1,5 +1,5 @@
 ﻿using Android.Graphics;
-using KodiAndroid.DataContract;
+using KodiAndroid.DataContracts;
 
 namespace KodiAndroid.Logic.Service
 {
