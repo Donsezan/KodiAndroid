@@ -16,9 +16,9 @@ namespace KodiAndroid.Logic.Commands
             var data = Deserialize(response);
 
             var stringList = new List<string>();
-            if (ValidateData(data))
+            if (data != null && ValidateData(data))
             {
-                stringList.Add($"{this.GetType().Name}: {data.result}");
+                stringList.Add($"{GetType().Name}: {data.result}");
                 return stringList;
             }
             stringList.Add(StartegyResultParse.ErrorMesage);

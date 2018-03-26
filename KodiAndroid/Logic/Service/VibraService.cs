@@ -14,8 +14,6 @@ namespace KodiAndroid.Logic.Service
                 var vibrator = (Vibrator)activity.GetSystemService(Context.VibratorService);
                 vibrator.Vibrate(30);
             }
-          
         }
-        
     }
 }

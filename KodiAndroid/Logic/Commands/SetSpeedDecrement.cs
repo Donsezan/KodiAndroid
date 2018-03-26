@@ -31,9 +31,10 @@ namespace KodiAndroid.Logic.Commands
         {
         }
 
-        protected override void AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
+        protected override List<string> AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
         {
             desList.Add($"Decrement speed to: {rootObject.result.speed}");
+            return desList;
         }
     }
 }

@@ -8,15 +8,6 @@ namespace KodiAndroid.Logic.Commands
     {
         public override RootObject CreateJson()
         {
-            //var properties = new DataContract.Params().properties;
-            //properties.Add("title");
-            //properties.Add("season");
-            //properties.Add("episode");
-            //properties.Add("plot");
-            //properties.Add("runtime");
-            //properties.Add("showtitle");
-            //properties.Add("thumbnail");
-
             var jsProperties = new List<string>
             {
                 "title",
@@ -54,11 +45,12 @@ namespace KodiAndroid.Logic.Commands
         {
         }
 
-        protected override void AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
+        protected override List<string> AddAdditionalData(List<string> desList, JsonRpcReceivingApi.ResultObject rootObject)
         {
             var result = rootObject.result;
             desList.Add(result.item.label);
             desList.Add(result.item.thumbnail);
+            return desList;
         }
     }
 }

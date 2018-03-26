@@ -82,16 +82,15 @@
     <Compile Include="Logic\Commands\SetSpeedIncrement.cs" />
     <Compile Include="Logic\Commands\Up.cs" />
     <Compile Include="Logic\Commands\VolumDown.cs" />
-    <Compile Include="Logic\Service\DownloaderImgService.cs" />
     <Compile Include="Logic\Service\BackGroundService.cs" />
     <Compile Include="Logic\KodiAndroid.cs" />
+    <Compile Include="Logic\Service\DownloaderImgService.cs" />
     <Compile Include="Logic\Service\HttpClient.cs" />
     <Compile Include="Logic\Service\DataService.cs" />
     <Compile Include="Logic\IValidatingStrategy.cs" />
     <Compile Include="Logic\Service\httpStubService.cs" />
     <Compile Include="Logic\Service\JsonService.cs" />
     <Compile Include="Logic\Service\PostService.cs" />
-    <Compile Include="Logic\Service\SettingsWorker.cs" />
     <Compile Include="Logic\Service\TaskTracker.cs" />
     <Compile Include="Logic\Service\VibraService.cs" />
     <Compile Include="Logic\Commands\VolumMute.cs" />
@@ -243,6 +242,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\blank_title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\warning_title.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

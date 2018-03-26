@@ -23,8 +23,9 @@ namespace KodiAndroid.Logic.Service
                 var jsonData = JsonConvert.DeserializeObject<T>(jsFile);
                 return jsonData;
             }
-            catch (JsonException)
+            catch
             {
+                StartegyResultParse.ErrorMesage = jsFile;
                 return null;
             }
         }

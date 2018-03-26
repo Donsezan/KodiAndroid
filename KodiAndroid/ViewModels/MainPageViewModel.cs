@@ -115,7 +115,15 @@ namespace KodiAndroid.ViewModels
                     if (toolBarPrewView != displayData.PrewView)
                     {
                         toolBarPrewView = displayData.PrewView;
-                        tolbarImg.SetImageBitmap(displayData.PrewView);
+                        if (displayData.PrewView != null)
+                        {
+                            tolbarImg.SetImageBitmap(displayData.PrewView);
+                        }
+                        else
+                        {
+                            tolbarImg.SetImageBitmap(BitmapFactory.DecodeResource(_activity.Resources, Resource.Drawable.warning_title));
+                        }
+                        
                     }
                 });
             };

@@ -2,9 +2,9 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/KodiAndroid/bin
+/KodiAndroid/bin/Debug
 /packages
 /KodiAndroid/obj
 /.vs
-/KodiAndroid/KodiAndroid.csproj.user
+
 .vs/KodiAndroid/v15/.suo
