@@ -15,8 +15,8 @@ namespace KodiAndroid.Logic.Service
         {
             var url = @"http://" + Settings.UrlAdress + "/jsonrpc";
             var jsFile = _jsonService.Serialize(rootObject);
-            var httpClientService = new HttpClientService();
-            //var httpClientService = new HttpStubService();
+            //var httpClientService = new HttpClientService();
+            var httpClientService = new HttpStubService();
 
             var response = httpClientService.PostReqest(jsFile, url);
             return response;

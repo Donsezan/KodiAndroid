@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using Android.App;
-using Android.Graphics;
 using Android.Widget;
+using System.Threading;
+using Android.Graphics;
 using KodiAndroid.Logic;
-using KodiAndroid.Logic.Commands;
+using System.Threading.Tasks;
 using KodiAndroid.Logic.Service;
+using KodiAndroid.Logic.Commands;
+using System.Collections.Generic;
 
 namespace KodiAndroid.ViewModels
 {
@@ -16,6 +16,8 @@ namespace KodiAndroid.ViewModels
         private readonly Logic.KodiAndroid _kodi = new Logic.KodiAndroid();
         private readonly JsonService _jsonService = new JsonService();
         private readonly Activity _activity;
+        private readonly object _titleLockObject = new object();
+        private readonly object _logoLockObject = new object();
 
         public MainPageViewModel(Activity activity)
         {
@@ -36,7 +38,10 @@ namespace KodiAndroid.ViewModels
             var mainText = _activity.FindViewById<TextView>(Resource.Id.mainText);
             _activity.RunOnUiThread(() =>
             {
-                mainText.Text = state[0];
+                lock (_titleLockObject)
+                {
+                    mainText.Text = state[0];
+                }
             });
         }
 
@@ -109,16 +114,22 @@ namespace KodiAndroid.ViewModels
                 {
                     if (toolBarLabel != displayData.Lables)
                     {
-                        toolBarLabel = displayData.Lables;
-                        tolbarTxt.Text = toolBarLabel != string.Empty ? toolBarLabel : "\t \t \t \t \t \t No Title";
+                        lock (_titleLockObject)
+                        {
+                            toolBarLabel = displayData.Lables;
+                            tolbarTxt.Text = toolBarLabel != string.Empty ? toolBarLabel : "\t \t \t \t \t \t No Title";
+                        }
                     }
 
                     if (toolBarPrewView != displayData.PrewView)
                     {
-                        toolBarPrewView = displayData.PrewView;
-                        tolbarImg.SetImageBitmap(displayData.PrewView ??
-                                                 BitmapFactory.DecodeResource(_activity.Resources,
-                                                     Resource.Drawable.blank_title));
+                        lock (_logoLockObject)
+                        {
+                            toolBarPrewView = displayData.PrewView;
+                            tolbarImg.SetImageBitmap(displayData.PrewView ??
+                                                     BitmapFactory.DecodeResource(_activity.Resources,
+                                                         Resource.Drawable.blank_title));
+                        }
                     }
                 });
             };
