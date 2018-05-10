@@ -37,18 +37,18 @@ namespace KodiAndroid
         }
 
         private void ReqestPremision()
-    {
-        if (CheckSelfPermission(Manifest.Permission.Internet) != Permission.Granted)
         {
-            if (ShouldShowRequestPermissionRationale(Manifest.Permission.Internet))
+            if (CheckSelfPermission(Manifest.Permission.Internet) != Permission.Granted)
             {
-            }
-            else
-            {
-                RequestPermissions(new[] {Manifest.Permission.Internet}, MyPermissionsRequest);
+                if (ShouldShowRequestPermissionRationale(Manifest.Permission.Internet))
+                {
+                }
+                else
+                {
+                    RequestPermissions(new[] {Manifest.Permission.Internet}, MyPermissionsRequest);
+                }
             }
         }
-    }
     }
 }
 
