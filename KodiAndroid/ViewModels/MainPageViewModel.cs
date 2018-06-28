@@ -18,6 +18,8 @@ namespace KodiAndroid.ViewModels
         private readonly Activity _activity;
         private readonly object _titleLockObject = new object();
         private readonly object _logoLockObject = new object();
+        private readonly object _statuskObject = new object();
+        private readonly object _globalLock = new object();
 
         public MainPageViewModel(Activity activity)
         {
@@ -26,11 +28,14 @@ namespace KodiAndroid.ViewModels
 
         private void Action(IBaseStrategy strategy)
         {
-            _kodi.SetStrategy(strategy);
-            _kodi.Vibrate(_activity);
-            var response = _kodi.SendPostReqest();
-            var list = strategy.EncodeResponse(response);
-            UpdateText(list);
+            lock (_globalLock)
+            {
+                _kodi.SetStrategy(strategy);
+                _kodi.Vibrate(_activity);
+                var response = _kodi.SendPostReqest();
+                var list = strategy.EncodeResponse(response);
+                UpdateText(list);
+            }
         }
 
         private void UpdateText(List<string> state)
@@ -38,21 +43,18 @@ namespace KodiAndroid.ViewModels
             var mainText = _activity.FindViewById<TextView>(Resource.Id.mainText);
             _activity.RunOnUiThread(() =>
             {
-                lock (_titleLockObject)
-                {
-                    mainText.Text = state[0];
-                }
+                mainText.Text = state[0].Length > 45 ? @"¯\_(ツ)_/¯" : state[0];
             });
         }
 
         public void MainViewActivity()
         {
+            const string toolBarLabel = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
             var img = _activity.GetDrawable(Resource.Drawable.mute_off);
-            var toolBarLabel = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
             var toolBarPrewView = BitmapFactory.DecodeResource(_activity.Resources, Resource.Drawable.blank_title);
-            var background = new BackGroundService(_kodi);
 
-            // Get the UI controls from the loaded layout:
+
+            #region Get the UI controls from the loaded layout:
             var powerButton = _activity.FindViewById<Button>(Resource.Id.PowerButton);
             var homeButton = _activity.FindViewById<Button>(Resource.Id.HomeButton);
             var backButton = _activity.FindViewById<Button>(Resource.Id.BackButton);
@@ -75,72 +77,29 @@ namespace KodiAndroid.ViewModels
             var toolbar = _activity.FindViewById<Toolbar>(Resource.Id.toolbar);
             var tolbarImg = _activity.FindViewById<ImageView>(Resource.Id.toolbarImg);
             var tolbarTxt = _activity.FindViewById<TextView>(Resource.Id.toolbarText);
-            _activity.SetActionBar(toolbar);
 
+            #endregion
+
+            _activity.SetActionBar(toolbar);
             _activity.ActionBar.Title = String.Empty;
             tolbarImg.SetImageBitmap(toolBarPrewView);
             tolbarTxt.Text = toolBarLabel;
             tolbarTxt.Selected = true;
-
-            var lockObject = new object();
-            var taskRunning = false;
-            var cts = new CancellationTokenSource();
-
+            
             var tt = new TaskTracker();
+
             tt.TaskCompleted += async (sender, e) =>
             {
-                lock (lockObject)
-                {
-                    if (taskRunning)
-                    {
-                        cts.Cancel(false);
-                    }
-                    taskRunning = true;
-                    cts = new CancellationTokenSource();
-                }
-                var token = cts.Token;
-
-                var displayData =
-                    await Task.Factory.StartNew(background.GetCurrentPlayingData, token);
-
-                if (token.IsCancellationRequested)
-                {
-                    return;
-                }
-
-                taskRunning = false;
-
-                _activity.RunOnUiThread(() =>
-                {
-                    if (toolBarLabel != displayData.Lables)
-                    {
-                        lock (_titleLockObject)
-                        {
-                            toolBarLabel = displayData.Lables;
-                            tolbarTxt.Text = toolBarLabel != string.Empty ? toolBarLabel : "\t \t \t \t \t \t No Title";
-                        }
-                    }
-
-                    if (toolBarPrewView != displayData.PrewView)
-                    {
-                        lock (_logoLockObject)
-                        {
-                            toolBarPrewView = displayData.PrewView;
-                            tolbarImg.SetImageBitmap(displayData.PrewView ??
-                                                     BitmapFactory.DecodeResource(_activity.Resources,
-                                                         Resource.Drawable.blank_title));
-                        }
-                    }
-                });
+               await UpdateTitle(tolbarImg, toolBarLabel, toolBarPrewView, tolbarTxt);
             };
-
+           
             #region Buttons command
 
-            muteButton.Click += (sender, e) => { tt.AddTask(() => Action(new VolumMute(_jsonService))); };
+            muteButton.Click += (sender, e) => tt.AddTask(() =>  Action(new VolumMute(_jsonService)));
 
-            previousButton.Click += (sender, e) => tt.AddTask(() => { Action(new GoToPrevious(_jsonService)); });
+            previousButton.Click += (sender, e) => tt.AddTask(() => Action(new GoToPrevious(_jsonService)));
 
-            rewindButton.Click += (sender, e) => tt.AddTask(() => { Action(new SetSpeedDecrement(_jsonService)); });
+            rewindButton.Click += (sender, e) => tt.AddTask(() => Action(new SetSpeedDecrement(_jsonService)));
 
             playpauseButton.Click += (sender, e) => tt.AddTask(() => { Action(new PlayPause(_jsonService)); });
 
@@ -169,6 +128,38 @@ namespace KodiAndroid.ViewModels
             volumDownButton.Click += (sender, e) => tt.AddTask(() => { Action(new VolumDown(_jsonService)); });
 
             #endregion
+        }
+
+        private async Task UpdateTitle(ImageView tolbarImg, string toolBarLabel, Bitmap toolBarPrewView,TextView tolbarTxt)
+        {
+            var background = new BackGroundService(_kodi);
+            var cts = new CancellationTokenSource();
+            var token = cts.Token;
+            var displayData =
+                await Task.Factory.StartNew(background.GetCurrentPlayingData, token);
+
+            _activity.RunOnUiThread(() =>
+            {
+                if (toolBarLabel != displayData.Lables)
+                {
+                    lock (_titleLockObject)
+                    {
+                        toolBarLabel = displayData.Lables;
+                        tolbarTxt.Text = toolBarLabel != string.Empty ? toolBarLabel : "\t \t \t \t \t \t No Title";
+                    }
+                }
+
+                if (toolBarPrewView != displayData.PrewView)
+                {
+                    lock (_logoLockObject)
+                    {
+                        toolBarPrewView = displayData.PrewView;
+                        tolbarImg.SetImageBitmap(displayData.PrewView ??
+                                                 BitmapFactory.DecodeResource(_activity.Resources,
+                                                     Resource.Drawable.blank_title));
+                    }
+                }
+            });
         }
     }
 }
