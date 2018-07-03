@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using KodiAndroid.Logic.Service;
 using KodiAndroid.Logic.Commands;
 using System.Collections.Generic;
+using KodiAndroid.Entire;
 
 namespace KodiAndroid.ViewModels
 {
@@ -15,11 +16,12 @@ namespace KodiAndroid.ViewModels
     {
         private readonly Logic.KodiAndroid _kodi = new Logic.KodiAndroid();
         private readonly JsonService _jsonService = new JsonService();
+        private readonly Params _params = new Params();
         private readonly Activity _activity;
         private readonly object _titleLockObject = new object();
         private readonly object _logoLockObject = new object();
-        private readonly object _statuskObject = new object();
         private readonly object _globalLock = new object();
+        private const int MaxTextLenght = 45;
 
         public MainPageViewModel(Activity activity)
         {
@@ -43,13 +45,13 @@ namespace KodiAndroid.ViewModels
             var mainText = _activity.FindViewById<TextView>(Resource.Id.mainText);
             _activity.RunOnUiThread(() =>
             {
-                mainText.Text = state[0].Length > 45 ? @"¯\_(ツ)_/¯" : state[0];
+                mainText.Text = state[0].Length > MaxTextLenght ? @"¯\_(ツ)_/¯" : state[0];
             });
         }
 
         public void MainViewActivity()
         {
-            const string toolBarLabel = "\t \t \t \t \t \t Welcome KodiAndroid v 1.2";
+            string toolBarLabel = $"\t \t \t \t \t \t Welcome {_params.AppName} v {_params.AppVersion}";
             var img = _activity.GetDrawable(Resource.Drawable.mute_off);
             var toolBarPrewView = BitmapFactory.DecodeResource(_activity.Resources, Resource.Drawable.blank_title);
 

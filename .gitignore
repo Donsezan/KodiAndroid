@@ -8,3 +8,5 @@
 /.vs
 
 .vs/KodiAndroid/v15/.suo
+*.ide
+*.suo

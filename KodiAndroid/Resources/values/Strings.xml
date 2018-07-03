@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">KodiAndroid</string>
+  <string name ="aboutText">
+    This is a simple application for the remote control of Kodi free media player or any other that use <b>JSON-RPC</b>.
+    </string>
+    <string name="aboutGitHubLinks">
+      <b>GitHub: </b><a href="https://github.com/Donsezan/KodiAndroid">KodiAndroid</a>
+    </string>
+    <string name="aboutVkontakteLinks">
+      <br><b>Vkontakte: </b><a href="https://vk.com/lucky_stars">vk.com/lucky_stars</a></br>
+    </string>
+    <string name="aboutFaceBookLinks">
+      <b>FaceBook: </b><a href="https://www.facebook.com/Umbra.noun.astr">fb.com/Umbra.noun.astr</a>
+    </string>
 </resources>

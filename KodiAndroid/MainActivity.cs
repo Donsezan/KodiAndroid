@@ -21,10 +21,17 @@ namespace KodiAndroid
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            StartActivity(typeof(OptionsActivity));
+            if (item.ToString() == "Options") { 
+                StartActivity(typeof(OptionsActivity));
+            };
+            if (item.ToString() == "About")
+            {
+                StartActivity(typeof(AboutActivity));
+            }
             return base.OnOptionsItemSelected(item);
         }
 
+      
         protected override void OnCreate(Bundle bundle)
         {
             var init = new DataService(this);
