@@ -16,34 +16,16 @@
         android:padding="3dp">
         <Button
             style="@style/DefaultButton"
-            android:text="Power"
-            android:id="@+id/PowerButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_margin="3dp"
-            android:layout_weight="0.1" />
+            android:text="@string/MainPowerButton"
+            android:id="@+id/PowerButton" />
         <Button
             style="@style/DefaultButton"
-            android:text="Home"
-            android:id="@+id/HomeButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_margin="3dp"
-            android:layout_weight="0.1" />
+            android:text="@string/MainHomeButton"
+            android:id="@+id/HomeButton" />
         <Button
             style="@style/DefaultButton"
-            android:text="Back"
-            android:id="@+id/BackButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_margin="3dp"
-            android:layout_weight="0.1" />
+            android:text="@string/MainBackButton"
+            android:id="@+id/BackButton" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,60 +48,25 @@
         android:padding="3dp"
         android:layout_weight="1">
         <Button
-            android:text="prev"
+            android:text="@string/MainPrevButton"
             android:id="@+id/previousButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:height="30dp"
-            android:gravity="center"
-            android:layout_weight=".10"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
         <Button
-            android:text="rewind"
+            android:text="@string/MainRewindButton"
             android:id="@+id/rewindButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:height="30dp"
-            android:gravity="center"
-            android:layout_weight=".10"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
         <Button
-            android:text="play"
+            android:text="@string/MainPlayButton"
             android:id="@+id/playpauseButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:height="30dp"
-            android:gravity="center"
-            android:layout_weight=".10"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
         <Button
-            android:text="forward"
+            android:text="@string/MainForwardButton"
             android:id="@+id/forwardButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:height="30dp"
-            android:gravity="center"
-            android:layout_weight=".10"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
         <Button
-            android:text="next"
+            android:text="@string/MainNextButton"
             android:id="@+id/nextButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:height="30dp"
-            android:gravity="center"
-            android:layout_weight=".10"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -137,25 +84,14 @@
         android:padding="3dp"
         android:layout_weight="2">
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".40"
-            android:background="#ff0000" />
+            style="@style/Space" />
         <Button
-            android:text="UP"
+            android:text="@string/MainUpButton"
             android:id="@+id/upButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".2"
             style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            android:layout_weight=".2" />
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".4"
-            android:background="#ff0000" />
+            style="@style/Space" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -163,45 +99,26 @@
         android:layout_weight="2"
         android:padding="3dp">
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".2"
-            android:background="#ff0000" />
+            style="@style/Space"
+            android:layout_weight="0.2" />
         <Button
-            android:text="left"
+            android:text="@string/MainLeftButton"
             android:id="@+id/leftButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".2"
             style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            android:layout_weight=".2" />
         <Button
-            android:text="Ok"
+            android:text="@string/MainOkButton"
             android:id="@+id/okButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".2"
             style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            android:layout_weight=".2" />
         <Button
-            android:text="Right"
+            android:text="@string/MainRightButton"
             android:id="@+id/rightButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".2"
             style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            android:layout_weight=".2" />
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".2"
-            android:background="#ff0000" />
+            style="@style/Space"
+            android:layout_weight="0.2" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -209,26 +126,14 @@
         android:layout_weight="2"
         android:padding="3dp">
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".4"
-            android:background="#ff0000" />
+            style="@style/Space" />
         <Button
-            android:text="Down"
+            android:text="@string/MainDownButton"
             android:id="@+id/downButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".2"
             style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp"
-            android:autoLink="none" />
+            android:layout_weight=".2" />
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".4"
-            android:background="#ff0000" />
+            style="@style/Space" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -246,32 +151,16 @@
         android:layout_weight="2"
         android:padding="3dp">
         <Button
-            android:text="Volume -"
+            android:text="@string/MainVolumDownButton"
             android:id="@+id/VolumDownButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".1"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
         <ImageButton
             android:scaleType="fitCenter"
             android:id="@+id/muteButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".1"
-            style="@style/DefaultButton"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
         <Button
-            android:text="Volume +"
+            android:text="@string/MainVolumUpButton"
             android:id="@+id/VolumUpButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_weight=".1"
-            style="@style/DefaultButton"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp" />
+            style="@style/DefaultButton" />
     </LinearLayout>
 </LinearLayout>

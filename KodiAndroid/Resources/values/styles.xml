@@ -6,8 +6,18 @@
 		<item name="android:colorPrimary">#212121</item>
 	</style>
   <style name="DefaultButton">
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
     <item name="android:background">@drawable/default_button_selector</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_margin">3dp</item>
+    <item name="android:layout_weight">0.1</item>
+  </style>
+  <style name="Space">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_weight">0.4</item>
+    <item name="android:background">#ff0000</item>
   </style>
 </resources>

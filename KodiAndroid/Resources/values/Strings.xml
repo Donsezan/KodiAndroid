@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name ="aboutText">
-    This is a simple application for the remote control of Kodi free media player or any other that use <b>JSON-RPC</b>.
+  <!--MainPage text-->
+  <string name="MainPowerButton">Power</string>
+  <string name="MainHomeButton">Home</string>
+  <string name="MainBackButton">Back</string>
+
+  <string name="MainPrevButton">prev</string>
+  <string name="MainRewindButton">rewind</string>
+  <string name="MainPlayButton">play</string>
+  <string name="MainForwardButton">forward</string>
+  <string name="MainNextButton">next</string>
+
+  <string name="MainUpButton">UP</string>
+  <string name="MainLeftButton">left</string>
+  <string name="MainOkButton">Ok</string>
+  <string name="MainRightButton">Right</string>
+  <string name="MainDownButton">Down</string>
+  
+  <string name="MainVolumDownButton">Volume -</string>
+  <string name="MainVolumUpButton">Volume +</string>
+  
+  <!--OptionsPage text-->
+  <string name="OptionsWebApiText">Web API URL</string>
+  <string name="OptionsVibrationSwitch">Vibration</string>
+  <string name="OptionsSaveButton">Save</string>
+  
+  <!--AboutPage text-->
+    <string name ="aboutText">
+      This is a simple application for the remote control of Kodi free media player or any other that use <b>JSON-RPC</b>.
     </string>
     <string name="aboutGitHubLinks">
       <b>GitHub: </b><a href="https://github.com/Donsezan/KodiAndroid">KodiAndroid</a>

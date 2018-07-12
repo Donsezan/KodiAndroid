@@ -249,17 +249,71 @@ namespace KodiAndroid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040003
-			public const int aboutFaceBookLinks = 2130968579;
+			// aapt resource value: 0x7f040002
+			public const int MainBackButton = 2130968578;
+			
+			// aapt resource value: 0x7f04000c
+			public const int MainDownButton = 2130968588;
+			
+			// aapt resource value: 0x7f040006
+			public const int MainForwardButton = 2130968582;
 			
 			// aapt resource value: 0x7f040001
-			public const int aboutGitHubLinks = 2130968577;
+			public const int MainHomeButton = 2130968577;
+			
+			// aapt resource value: 0x7f040009
+			public const int MainLeftButton = 2130968585;
+			
+			// aapt resource value: 0x7f040007
+			public const int MainNextButton = 2130968583;
+			
+			// aapt resource value: 0x7f04000a
+			public const int MainOkButton = 2130968586;
+			
+			// aapt resource value: 0x7f040005
+			public const int MainPlayButton = 2130968581;
 			
 			// aapt resource value: 0x7f040000
-			public const int aboutText = 2130968576;
+			public const int MainPowerButton = 2130968576;
 			
-			// aapt resource value: 0x7f040002
-			public const int aboutVkontakteLinks = 2130968578;
+			// aapt resource value: 0x7f040003
+			public const int MainPrevButton = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int MainRewindButton = 2130968580;
+			
+			// aapt resource value: 0x7f04000b
+			public const int MainRightButton = 2130968587;
+			
+			// aapt resource value: 0x7f040008
+			public const int MainUpButton = 2130968584;
+			
+			// aapt resource value: 0x7f04000d
+			public const int MainVolumDownButton = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int MainVolumUpButton = 2130968590;
+			
+			// aapt resource value: 0x7f040011
+			public const int OptionsSaveButton = 2130968593;
+			
+			// aapt resource value: 0x7f040010
+			public const int OptionsVibrationSwitch = 2130968592;
+			
+			// aapt resource value: 0x7f04000f
+			public const int OptionsWebApiText = 2130968591;
+			
+			// aapt resource value: 0x7f040015
+			public const int aboutFaceBookLinks = 2130968597;
+			
+			// aapt resource value: 0x7f040013
+			public const int aboutGitHubLinks = 2130968595;
+			
+			// aapt resource value: 0x7f040012
+			public const int aboutText = 2130968594;
+			
+			// aapt resource value: 0x7f040014
+			public const int aboutVkontakteLinks = 2130968596;
 			
 			static String()
 			{
@@ -279,6 +333,9 @@ namespace KodiAndroid
 			
 			// aapt resource value: 0x7f050000
 			public const int KodiAndroidTheme = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int Space = 2131034114;
 			
 			static Style()
 			{
