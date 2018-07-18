@@ -8,23 +8,31 @@ namespace KodiAndroid.Logic.Service
     {
         public string PostReqest(string file, string url)
         {
+            var wc = new WebClient();
+            string responseString;
             try
             {
-                using (var wc = new WebClient())
-                {
-                    var dataBytes = Encoding.UTF8.GetBytes(file);
-                    var responseBytes = wc.UploadData(new Uri(url), "POST", dataBytes);
-                    var responseString = Encoding.UTF8.GetString(responseBytes);
-                    return responseString;
-                }
+                var dataBytes = Encoding.UTF8.GetBytes(file);
+                var responseBytes = wc.UploadData(new Uri(url), "POST", dataBytes);
+                responseString = Encoding.UTF8.GetString(responseBytes);
             }
             catch (WebException ex)
             {
-                if (ex.Status != WebExceptionStatus.ProtocolError) return ex.Message;
-                var description = "Status Code : "+ ((HttpWebResponse)ex.Response).StatusCode + "Status Description "+ ((HttpWebResponse)ex.Response).StatusDescription;
-                return description;
-            }            
+                if (ex.Status != WebExceptionStatus.ProtocolError)
+                {
+                    responseString = ex.Message;
+                }
+                else
+                {
+                    responseString = "Status Code : " + ((HttpWebResponse) ex.Response).StatusCode +
+                                     "Status Description " + ((HttpWebResponse) ex.Response).StatusDescription;
+                }
+            }
+            finally
+            {
+                wc.Dispose();
+            }
+            return responseString;
         }
-        
     }
 }

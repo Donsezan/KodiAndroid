@@ -9,8 +9,8 @@ namespace KodiAndroid.Logic.Service
         public Bitmap GetImageBitmapFromUrl(string url)
         {
             Bitmap imageBitmap = null;
-
-            using (var webClient = new WebClient())
+            var webClient = new WebClient();
+            try
             {
                 url = Uri.UnescapeDataString(url);
                 var imageBytes = webClient.DownloadData(url);
@@ -18,6 +18,14 @@ namespace KodiAndroid.Logic.Service
                 {
                     imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
                 }
+            }
+            catch (WebException)
+            {
+
+            }
+            finally
+            {
+                webClient.Dispose();
             }
             return imageBitmap;
         }
