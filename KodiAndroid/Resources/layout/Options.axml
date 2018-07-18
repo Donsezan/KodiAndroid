@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
-        android:text="Web API URL "
+        android:text="@string/OptionsWebApiText"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,14 +23,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/VibraSwitch"
         android:layout_marginRight="20dp"
-        android:text="Vibration"
+        android:text="@string/OptionsVibrationSwitch"
         style="@style/KodiAndroidTheme"
         android:checked="true"
         android:layout_marginLeft="20dp"
         android:textSize="20dp"
         android:layout_marginTop="20dp" />
     <Button
-        android:text="Save"
+        android:text="@string/OptionsSaveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/SaveOptions"
