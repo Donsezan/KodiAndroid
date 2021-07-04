@@ -12,3 +12,5 @@
 *.suo
 .vs/KodiAndroid/v15/Server/sqlite3/storage.ide
 .vs/KodiAndroid/v15/.suo
+/KodiAndroid/bin/Release
+/Release
